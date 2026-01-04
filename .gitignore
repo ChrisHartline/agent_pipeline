@@ -98,3 +98,6 @@ celerybeat-schedule
 
 # Windows
 Thumbs.db
+# Generated model outputs
+models/
+output/
