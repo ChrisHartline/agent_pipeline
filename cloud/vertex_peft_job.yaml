@@ -1,0 +1,33 @@
+# Vertex AI CustomJob spec template
+# Replace <PROJECT>, <REGION>, <IMAGE_URI>, <GCS_OUTPUT_DIR> before submitting
+
+jobSpec:
+  workerPoolSpecs:
+    - machineSpec:
+        machineType: "a2-highgpu-1g"
+        acceleratorType: "NVIDIA_TESLA_A100"
+        acceleratorCount: 1
+      replicaCount: 1
+      containerSpec:
+        imageUri: "<IMAGE_URI>"
+        args:
+          - "--base"
+          - "<BASE_MODEL>"
+          - "--data"
+          - "gs://<BUCKET>/train.jsonl"
+          - "--out"
+          - "/gcs/output"
+        env:
+          - name: "HF_TOKEN"
+            value: "${HF_TOKEN}"
+          - name: "WANDB_API_KEY"
+            value: "${WANDB_API_KEY}"
+          - name: "GOOGLE_APPLICATION_CREDENTIALS"
+            value: "/var/secrets/google/key.json"
+      localDisk:
+        field: "ephemeral"
+      diskSpec:
+        bootDiskType: "pd-ssd"
+        bootDiskSizeGb: 200
+
+# After job finishes, you can copy /gcs/output to gs://<GCS_OUTPUT_DIR> or mount GCS

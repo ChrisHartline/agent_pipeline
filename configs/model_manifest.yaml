@@ -1,0 +1,59 @@
+# Machine-readable list of target models and preferred formats
+models:
+  - name: functiongemma-270m-it
+    hf_slug: google/functiongemma-270m-it
+    type: function-oriented
+    preferred_format: safetensors
+    trainable: true
+    notes: "Small; good for function synthesis and agent skills."
+
+  - name: t5gemma-2-4b
+    hf_slug: google/t5gemma-2-4b-4b
+    type: seq2seq
+    preferred_format: safetensors
+    trainable: true
+
+  - name: z-image-turbo
+    hf_slug: unsloth/Z-Image-Turbo-GGUF
+    type: vision
+    preferred_format: gguf
+    trainable: false
+    notes: "GGUF inference-only; usable with Ollama."
+
+  - name: mistral-3-8b-instruct
+    hf_slug: mistralai/Ministral-3-8B-Instruct-2512
+    type: instruction
+    preferred_format: safetensors
+    trainable: true
+
+  - name: granite-docling
+    hf_slug: ibm-granite/granite-docling-258M
+    type: document
+    preferred_format: safetensors
+    trainable: true
+
+  - name: cydonia-24b
+    hf_slug: TheDrummer/Cydonia-24B-v4.3
+    type: large-general
+    preferred_format: safetensors
+    trainable: true
+    notes: "Very large; use quantization/LoRA for practicality."
+
+  - name: smollm3-3b
+    hf_slug: HuggingFaceTB/SmolLM3-3B
+    type: instruction
+    preferred_format: safetensors
+    trainable: true
+
+  - name: tinyllama-1.1b-chat
+    hf_slug: TinyLlama/TinyLlama-1.1B-Chat-v1.0
+    type: chat
+    preferred_format: safetensors
+    trainable: true
+
+  - name: phi3-mini-instruct
+    hf_slug: phi/phi-3-mini-instruct
+    type: instruction
+    preferred_format: safetensors
+    trainable: true
+    notes: "Recommended Phi variant for agents (mini = low latency, good instruction-following)."

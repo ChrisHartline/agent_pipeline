@@ -1,0 +1,57 @@
+name: Build and push PEFT Docker image
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v2
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Install project (editable)
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v1
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GCP_SA_EMAIL }}
+
+      - name: Configure docker to use Artifact Registry
+        run: |
+          gcloud auth configure-docker us-docker.pkg.dev --quiet
+
+      - name: Build and push image
+        uses: docker/build-push-action@v4
+        with:
+          push: true
+          tags: us-docker.pkg.dev/${{ secrets.GCP_PROJECT }}/clara-training-repo/clara-peft:${{ github.sha }}
+          file: Dockerfile.peft
+
+      - name: Create Vertex job spec (optional)
+        run: |
+          python scripts/vertex_submit.py --image us-docker.pkg.dev/${{ secrets.GCP_PROJECT }}/clara-training-repo/clara-peft:${{ github.sha }} --base TinyLlama/TinyLlama-1.1B-Chat-v1.0 --data gs://agent_models/train.jsonl --gcs-output gs://agent_models/outputs/ --out job-${{ github.sha }}.json
+
+      - name: Upload job spec as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: vertex-job-spec
+          path: job-${{ github.sha }}.json

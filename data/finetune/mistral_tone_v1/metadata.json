@@ -1,0 +1,9 @@
+{
+  "name": "casual-conversation-poo",
+  "src": "data\\finetune\\casual_conv_DP0\\casual-conversation-poo.json",
+  "n_raw": 3725,
+  "n_train": 3352,
+  "n_valid": 186,
+  "n_test": 187,
+  "schema": "input/output"
+}
