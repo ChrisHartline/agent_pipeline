@@ -1,5 +1,7 @@
 # Non-PyTorch dependencies
 numpy>=1.24.0
+pydantic>=2.0.0
+sentence-transformers>=2.2.0
 scipy>=1.10.0
 transformers>=4.40.0
 datasets>=2.14.0
