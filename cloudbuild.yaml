@@ -1,0 +1,51 @@
+# Cloud Build configuration for Clara training container
+#
+# Usage:
+#   gcloud builds submit --config cloudbuild.yaml
+#
+# This builds and pushes to Artifact Registry:
+#   us-central1-docker.pkg.dev/celestinecircle/clara-training-repo/clara-train:latest
+
+substitutions:
+  _PROJECT_ID: celestinecircle
+  _REGION: us-central1
+  _REPOSITORY: clara-training-repo
+  _IMAGE_NAME: clara-train
+
+steps:
+  # Build the Docker image
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'build'
+      - '-t'
+      - '${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPOSITORY}/${_IMAGE_NAME}:${SHORT_SHA}'
+      - '-t'
+      - '${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPOSITORY}/${_IMAGE_NAME}:latest'
+      - '-f'
+      - 'Dockerfile'
+      - '.'
+
+  # Push with commit SHA tag
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'push'
+      - '${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPOSITORY}/${_IMAGE_NAME}:${SHORT_SHA}'
+
+  # Push latest tag
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'push'
+      - '${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPOSITORY}/${_IMAGE_NAME}:latest'
+
+# Store images in Artifact Registry
+images:
+  - '${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPOSITORY}/${_IMAGE_NAME}:${SHORT_SHA}'
+  - '${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPOSITORY}/${_IMAGE_NAME}:latest'
+
+# Build options
+options:
+  logging: CLOUD_LOGGING_ONLY
+  machineType: 'E2_HIGHCPU_8'
+
+# Timeout for build (30 minutes should be plenty)
+timeout: '1800s'
