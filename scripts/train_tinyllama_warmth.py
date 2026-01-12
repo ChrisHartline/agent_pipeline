@@ -41,9 +41,32 @@ def main():
     parser.add_argument("--wandb-project", default=None, help="W&B project name")
     args = parser.parse_args()
 
-    # Check if data exists
-    if not Path(args.dataset).exists():
-        logger.error(f"Dataset not found: {args.dataset}")
+    # Handle GCS paths - download if needed
+    dataset_path = args.dataset
+    if dataset_path.startswith("gs://"):
+        logger.info(f"Downloading from GCS: {dataset_path}")
+        try:
+            from google.cloud import storage
+            import tempfile
+
+            # Parse GCS path
+            gcs_parts = dataset_path.replace("gs://", "").split("/", 1)
+            bucket_name, blob_name = gcs_parts[0], gcs_parts[1]
+
+            # Download to temp file
+            client = storage.Client()
+            bucket = client.bucket(bucket_name)
+            blob = bucket.blob(blob_name)
+
+            local_path = Path(tempfile.gettempdir()) / Path(blob_name).name
+            blob.download_to_filename(str(local_path))
+            dataset_path = str(local_path)
+            logger.info(f"Downloaded to: {dataset_path}")
+        except Exception as e:
+            logger.error(f"Failed to download from GCS: {e}")
+            sys.exit(1)
+    elif not Path(dataset_path).exists():
+        logger.error(f"Dataset not found: {dataset_path}")
         logger.info("Run: python scripts/convert_to_sft.py")
         sys.exit(1)
 
@@ -62,7 +85,7 @@ def main():
     # Create configuration
     config = lora_training_config(
         base_model="TinyLlama/TinyLlama-1.1B-Chat-v1.0",
-        dataset=args.dataset,
+        dataset=dataset_path,
         output_dir=args.output_dir,
         lora_r=args.lora_r,
         lora_alpha=args.lora_r * 2,  # Common practice: alpha = 2 * r
