@@ -5,8 +5,8 @@ This guide walks through running Clara personality fine-tuning on Vertex AI.
 ## Prerequisites
 
 1. **GCP Project**: `celestinecircle`
-2. **Artifact Registry**: `clara-training-repo` (us-central1)
-3. **GCS Bucket**: Create `clara-training-data` bucket
+2. **Artifact Registry**: `clara-training-repo` (us-east1)
+3. **GCS Bucket**: `training_datasets_ai` (existing bucket)
 
 ## Setup
 
@@ -23,19 +23,20 @@ gcloud config set project celestinecircle
 gcloud auth list
 ```
 
-### 2. Create GCS Bucket (if needed)
+### 2. GCS Bucket
 
+Bucket `training_datasets_ai` already exists with training data:
 ```bash
-gsutil mb -l us-central1 gs://clara-training-data
+# List contents
+gsutil ls gs://training_datasets_ai/
 ```
 
-### 3. Create Artifact Registry Repo (if needed)
+### 3. Artifact Registry (already exists)
 
+Repository `clara-training-repo` is in us-east1:
 ```bash
-gcloud artifacts repositories create clara-training-repo \
-    --repository-format=docker \
-    --location=us-central1 \
-    --description="Clara training images"
+# List repositories
+gcloud artifacts repositories list --location=us-east1
 ```
 
 ### 4. Enable Required APIs
@@ -55,8 +56,8 @@ gcloud services enable \
 gcloud builds submit --config cloudbuild.yaml
 
 # Or build locally and push
-docker build -t us-central1-docker.pkg.dev/celestinecircle/clara-training-repo/clara-train:latest .
-docker push us-central1-docker.pkg.dev/celestinecircle/clara-training-repo/clara-train:latest
+docker build -t us-east1-docker.pkg.dev/celestinecircle/clara-training-repo/clara-train:latest .
+docker push us-east1-docker.pkg.dev/celestinecircle/clara-training-repo/clara-train:latest
 ```
 
 ## Run Training
@@ -115,7 +116,7 @@ For TinyLlama (1.1B params) with 6700 examples, expect:
 ## Output
 
 After training, find outputs in:
-- **Vertex AI**: `gs://clara-training-data/output/run_<timestamp>/`
+- **Vertex AI**: `gs://training_datasets_ai/output/run_<timestamp>/`
 - **Local**: `./output/tinyllama-warmth/`
 
 Output includes:
