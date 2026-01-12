@@ -60,10 +60,10 @@ def test_vertex():
         from google.cloud import aiplatform
         aiplatform.init(project=PROJECT_ID, location=REGION)
 
-        # List recent jobs
-        jobs = aiplatform.CustomJob.list(filter=f'display_name~"clara"')
+        # List recent jobs (no filter to avoid syntax issues)
+        jobs = aiplatform.CustomJob.list()
         print(f"   ✓ Vertex AI accessible")
-        print(f"   Recent clara jobs: {len(jobs)}")
+        print(f"   Total custom jobs: {len(jobs)}")
 
         return True
     except Exception as e:
