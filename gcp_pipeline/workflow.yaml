@@ -1,0 +1,54 @@
+# Cloud Workflow for automated TinyLlama training
+# Deploy with: gcloud workflows deploy clara-training-workflow --source=workflow.yaml --location=us-east1
+
+main:
+  params: [input]
+  steps:
+    - init:
+        assign:
+          - project_id: "celestinecircle"
+          - region: "us-east1"
+          - training_image: "us-east1-docker.pkg.dev/celestinecircle/clara-training-repo/clara-train:latest"
+          - data_path: ${default(input.data_path, "gs://training_datasets_ai/casual_conv_DP0/casual-conversation-poo.json")}
+          - output_bucket: "agent_models"
+          - timestamp: ${time.format(sys.now(), "yyyyMMdd-HHmmss")}
+
+    - log_start:
+        call: sys.log
+        args:
+          text: ${"Starting training job at " + timestamp + " with data " + data_path}
+
+    - create_training_job:
+        call: googleapis.aiplatform.v1.projects.locations.customJobs.create
+        args:
+          parent: ${"projects/" + project_id + "/locations/" + region}
+          body:
+            displayName: ${"clara-train-" + timestamp}
+            jobSpec:
+              workerPoolSpecs:
+                - machineSpec:
+                    machineType: "n1-standard-8"
+                    acceleratorType: "NVIDIA_TESLA_T4"
+                    acceleratorCount: 1
+                  replicaCount: 1
+                  containerSpec:
+                    imageUri: ${training_image}
+                    args:
+                      - "--dataset"
+                      - ${data_path}
+                      - "--output-dir"
+                      - ${"gs://" + output_bucket + "/output/" + timestamp}
+                      - "--epochs"
+                      - "3"
+        result: job_response
+
+    - log_job_created:
+        call: sys.log
+        args:
+          text: ${"Job created: " + job_response.name}
+
+    - return_result:
+        return:
+          job_name: ${job_response.name}
+          timestamp: ${timestamp}
+          status: "submitted"
