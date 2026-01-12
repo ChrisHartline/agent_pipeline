@@ -30,10 +30,10 @@ from pathlib import Path
 
 # Project configuration
 PROJECT_ID = "celestinecircle"
-REGION = "us-central1"
+REGION = "us-east1"
 REPOSITORY = "clara-training-repo"
 IMAGE_NAME = "clara-train"
-BUCKET_NAME = "clara-training-data"  # You may need to create this
+BUCKET_NAME = "training_datasets_ai"  # Existing bucket with training data
 
 # Image URI
 IMAGE_URI = f"{REGION}-docker.pkg.dev/{PROJECT_ID}/{REPOSITORY}/{IMAGE_NAME}:latest"

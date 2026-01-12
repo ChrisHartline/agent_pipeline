@@ -4,11 +4,11 @@
 #   gcloud builds submit --config cloudbuild.yaml
 #
 # This builds and pushes to Artifact Registry:
-#   us-central1-docker.pkg.dev/celestinecircle/clara-training-repo/clara-train:latest
+#   us-east1-docker.pkg.dev/celestinecircle/clara-training-repo/clara-train:latest
 
 substitutions:
   _PROJECT_ID: celestinecircle
-  _REGION: us-central1
+  _REGION: us-east1
   _REPOSITORY: clara-training-repo
   _IMAGE_NAME: clara-train
 

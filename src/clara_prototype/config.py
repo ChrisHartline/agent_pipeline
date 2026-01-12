@@ -136,7 +136,7 @@ class GCSConfig(BaseModel):
 class VertexConfig(BaseModel):
     """Configuration for Vertex AI training jobs."""
     project_id: str = Field(..., description="GCP project ID")
-    region: str = Field(default="us-central1")
+    region: str = Field(default="us-east1")
     staging_bucket: str = Field(..., description="GCS bucket for staging")
 
     # Machine configuration
