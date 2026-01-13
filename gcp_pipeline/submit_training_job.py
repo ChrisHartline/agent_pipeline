@@ -89,7 +89,7 @@ def submit_job(
     job.run(sync=False)  # Don't wait for completion
 
     print(f"\nJob submitted successfully!")
-    print(f"Job resource: {job.resource_name}")
+    print(f"Job name: {job_name}")
     print(f"\nMonitor at: https://console.cloud.google.com/vertex-ai/training/custom-jobs?project={PROJECT_ID}")
 
     return job
