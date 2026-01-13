@@ -18,6 +18,7 @@ from config import (
     MACHINE_TYPE,
     ACCELERATOR_TYPE,
     ACCELERATOR_COUNT,
+    MODELS_BUCKET,
 )
 
 
@@ -32,8 +33,12 @@ def submit_job(
 
     from google.cloud import aiplatform
 
-    # Initialize Vertex AI
-    aiplatform.init(project=PROJECT_ID, location=REGION)
+    # Initialize Vertex AI with staging bucket for temp files
+    aiplatform.init(
+        project=PROJECT_ID,
+        location=REGION,
+        staging_bucket=f"gs://{MODELS_BUCKET}",
+    )
 
     # Generate unique job name
     timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
