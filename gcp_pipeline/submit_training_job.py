@@ -52,12 +52,21 @@ def submit_job(
         "--batch-size", str(batch_size),
     ]
 
+    # Build machine spec (with or without GPU)
+    machine_spec = {"machine_type": MACHINE_TYPE}
+    if ACCELERATOR_TYPE and ACCELERATOR_COUNT > 0:
+        machine_spec["accelerator_type"] = ACCELERATOR_TYPE
+        machine_spec["accelerator_count"] = ACCELERATOR_COUNT
+        accel_str = f" + {ACCELERATOR_COUNT}x {ACCELERATOR_TYPE}"
+    else:
+        accel_str = " (CPU only)"
+
     print(f"Job Configuration:")
     print(f"  Name: {job_name}")
     print(f"  Image: {TRAINING_IMAGE}")
     print(f"  Data: {data_path}")
     print(f"  Output: {output_path}/{timestamp}")
-    print(f"  Machine: {MACHINE_TYPE} + {ACCELERATOR_COUNT}x {ACCELERATOR_TYPE}")
+    print(f"  Machine: {MACHINE_TYPE}{accel_str}")
     print(f"  Args: {container_args}")
 
     if dry_run:
@@ -69,11 +78,7 @@ def submit_job(
         display_name=job_name,
         worker_pool_specs=[
             {
-                "machine_spec": {
-                    "machine_type": MACHINE_TYPE,
-                    "accelerator_type": ACCELERATOR_TYPE,
-                    "accelerator_count": ACCELERATOR_COUNT,
-                },
+                "machine_spec": machine_spec,
                 "replica_count": 1,
                 "container_spec": {
                     "image_uri": TRAINING_IMAGE,
