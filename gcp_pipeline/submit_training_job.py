@@ -64,28 +64,35 @@ def submit_job(
         print("\n[DRY RUN] Would submit job with above configuration.")
         return None
 
-    # Create and run the custom job
-    job = aiplatform.CustomContainerTrainingJob(
+    # Create custom job (training only, no model registration)
+    job = aiplatform.CustomJob(
         display_name=job_name,
-        container_uri=TRAINING_IMAGE,
+        worker_pool_specs=[
+            {
+                "machine_spec": {
+                    "machine_type": MACHINE_TYPE,
+                    "accelerator_type": ACCELERATOR_TYPE,
+                    "accelerator_count": ACCELERATOR_COUNT,
+                },
+                "replica_count": 1,
+                "container_spec": {
+                    "image_uri": TRAINING_IMAGE,
+                    "args": container_args,
+                },
+            }
+        ],
+        base_output_dir=output_path,
     )
 
     print(f"\nSubmitting job...")
 
-    model = job.run(
-        model_display_name=f"clara-tinyllama-{timestamp}",
-        args=container_args,
-        replica_count=1,
-        machine_type=MACHINE_TYPE,
-        accelerator_type=ACCELERATOR_TYPE,
-        accelerator_count=ACCELERATOR_COUNT,
-        base_output_dir=output_path,
-    )
+    job.run(sync=False)  # Don't wait for completion
 
     print(f"\nJob submitted successfully!")
-    print(f"Model: {model.resource_name}")
+    print(f"Job resource: {job.resource_name}")
+    print(f"\nMonitor at: https://console.cloud.google.com/vertex-ai/training/custom-jobs?project={PROJECT_ID}")
 
-    return model
+    return job
 
 
 def main():
