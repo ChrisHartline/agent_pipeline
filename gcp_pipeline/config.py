@@ -18,7 +18,7 @@ TRAINING_DATA_PATH = "gs://training_datasets_ai/casual_conv_DP0/casual-conversat
 MODEL_OUTPUT_PATH = f"gs://{MODELS_BUCKET}/output"
 BASE_MODEL_PATH = f"gs://{MODELS_BUCKET}/models"
 
-# Machine specs for Vertex AI (CPU only - no GPU quota yet)
+# Machine specs for Vertex AI (T4 GPU - quota approved)
 MACHINE_TYPE = "n1-standard-8"
 ACCELERATOR_TYPE = "NVIDIA_TESLA_T4"
-ACCELERATOR_COUNT = 0
+ACCELERATOR_COUNT = 1
