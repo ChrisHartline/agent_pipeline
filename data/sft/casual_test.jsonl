@@ -1,0 +1,745 @@
+{"human": "good. i hope it doesn't cool off this weekend.", "assistant": "i know. i really want to go to the beach."}
+{"instruction": "how long did it take?", "input": "", "output": "it took us all day."}
+{"human": "he might want to cut you open.", "assistant": "he might say i'm okay."}
+{"human": "no, they don't. one is black and one is dark blue.", "assistant": "yikes! thank you."}
+{"human": "you're right. the buses are never on time.", "assistant": "number three, it doesn't run 24 hours."}
+{"instruction": "i took the dog for a walk.", "input": "", "output": "i'll bet he enjoyed his walk."}
+{"instruction": "i really wish i went to the game.", "input": "", "output": "it was the best game ever."}
+{"human": "so, every time the plane goes up, my ear starts to hurt.", "assistant": "that's no good."}
+{"instruction": "these are chucks.", "input": "", "output": "your shoes look really nice. how much did you get them for?"}
+{"human": "i got a ticket downtown for $140.", "assistant": "were you speeding?"}
+{"instruction": "did you always know how to draw and paint?", "input": "", "output": "i was taught in high school how to draw and paint."}
+{"instruction": "you do? i just bought this outfit a couple days ago.", "input": "", "output": "seriously, it looks really nice on you. where did you buy it from?"}
+{"human": "a blind date doesn't mean that she is blind!", "assistant": "what does it mean?"}
+{"human": "can you fix a dripping faucet in a kitchen sink?", "assistant": "of course."}
+{"instruction": "our cousin went into labor and had her baby last week.", "input": "", "output": "she did? why didn't anyone tell me?"}
+{"instruction": "everything's been good with you?", "input": "", "output": "i haven't been better. how about yourself?"}
+{"human": "they forget who put them in power.", "assistant": "they forget where they came from."}
+{"instruction": "well, you're supposed to be working.", "input": "", "output": "yes, but i will always pet the friendly dogs."}
+{"human": "but you would buy her cd if she was pretty?", "assistant": "yes. i would buy all of her cds."}
+{"human": "so? that's a ticket?", "assistant": "yes, it's a $140 ticket."}
+{"human": "you're yawning.", "assistant": "i sure am."}
+{"instruction": "what happened?", "input": "", "output": "i got laid off."}
+{"human": "any rain right now would be pointless.", "assistant": "that's right, it really would be."}
+{"human": "she's one of the prettiest girls at the school.", "assistant": "what does she look like?"}
+{"instruction": "i think it's five miles deep.", "input": "", "output": "are there fish at the bottom?"}
+{"human": "okay. what will you teach me?", "assistant": "it's called poker."}
+{"instruction": "i'd like that.", "input": "", "output": "so i'll see you next time."}
+{"human": "yeah, maybe next time.", "assistant": "i'll hold you to that."}
+{"instruction": "it hurts, too.", "input": "", "output": "paper cuts can hurt a lot."}
+{"instruction": "maybe you just need to go to the bathroom.", "input": "", "output": "no, that's not the problem."}
+{"human": "then he didn't bother to apologize.", "assistant": "that's rude."}
+{"human": "wasn't there anything about octo-mom?", "assistant": "of course. she's going to hire a nanny for her eight infants."}
+{"human": "i'll teach you one.", "assistant": "okay. what will you teach me?"}
+{"instruction": "it's a yearly reminder to take care of our planet.", "input": "", "output": "oh, you mean like reuse things and recycle stuff?"}
+{"instruction": "so was i.", "input": "", "output": "i had to bring work home with me."}
+{"instruction": "why not?", "input": "", "output": "because i'll never find one for such a low price."}
+{"human": "but typing is causing you pain.", "assistant": "maybe i should see a doctor."}
+{"instruction": "he was asking for it.", "input": "", "output": "he learned his lesson. he's home today."}
+{"instruction": "did you go to the 99 cents store?", "input": "", "output": "yes, i did."}
+{"instruction": "it's supposed to start at about eight.", "input": "", "output": "how many invitations has she given out?"}
+{"instruction": "he's been a chain smoker for 30 years.", "input": "", "output": "that's unbelievable. can he still breathe?"}
+{"human": "no way! i don't want to fall to my death.", "assistant": "don't worry. only one person has ever fallen off a mule."}
+{"human": "i don't see anything.", "assistant": "i bought lots of oranges and apples."}
+{"instruction": "are you going to start a family?", "input": "", "output": "yes. we want to have a little boy and a little girl."}
+{"human": "yes, he went through the red light.", "assistant": "can we call the police?"}
+{"instruction": "did you look in the desk drawer?", "input": "", "output": "yes, i looked there, too."}
+{"human": "first you dial seven numbers, then ten numbers, then ten more numbers.", "assistant": "yikes. i think i'll keep my long distance service."}
+{"human": "i loved it. i still remember how amazing it was.", "assistant": "i'm sure i'll like it, too."}
+{"instruction": "it's such a chore.", "input": "", "output": "brush, brush. spit, spit."}
+{"human": "it's about crime in los angeles.", "assistant": "what does it say?"}
+{"human": "it wouldn't be good if it got cold this weekend.", "assistant": "i want this trip to be perfect, i hope it stays warm."}
+{"instruction": "i think only the family will be there.", "input": "", "output": "you have lots of friends. they will be there, too!"}
+{"human": "well, i guess if it ever does get old, i'll change to something different.", "assistant": "do you eat fruits and vegetables every day?"}
+{"human": "half of them are coughing, and the other half are sneezing.", "assistant": "you don't have any elbow room or knee room."}
+{"instruction": "i mean, it's just coffee.", "input": "", "output": "i figured that."}
+{"human": "the weather this weekend is supposed to be warm.", "assistant": "will it be good beach weather?"}
+{"human": "it shouldn't take him long to fix it.", "assistant": "i don't even know why we need to fix it."}
+{"instruction": "i couldn't find any stamps.", "input": "", "output": "they're in the kitchen drawer."}
+{"instruction": "what's that?", "input": "", "output": "it's a yearly reminder to take care of our planet."}
+{"human": "no, it's dark pink!", "assistant": "are you sure? i never heard of such a thing."}
+{"instruction": "do you pray to god?", "input": "", "output": "occasionally."}
+{"instruction": "now they're adding old tv shows to the old movies.", "input": "", "output": "i sure would like to see something interesting for a change."}
+{"instruction": "check your tires or you'll get a flat.", "input": "", "output": "oh. that's not good."}
+{"instruction": "and now i'm glad that i didn't.", "input": "", "output": "why's that?"}
+{"human": "i was writing a letter.", "assistant": "who were you writing to?"}
+{"human": "who in the world is ralph nader?", "assistant": "he's the best man for president."}
+{"human": "i'm trying to stretch my dollars.", "assistant": "how are you doing that?"}
+{"human": "i think it was about 45 minutes long.", "assistant": "but it went by fast. it was interesting."}
+{"instruction": "doesn't crime cost more than police?", "input": "", "output": "yes, it does."}
+{"instruction": "yes, i did.", "input": "", "output": "did you tell her about school?"}
+{"human": "did you need something?", "assistant": "do you want to do something tomorrow?"}
+{"human": "it was seven feet tall.", "assistant": "how long did it take?"}
+{"instruction": "i have to do some things, and besides, it's not polite to be nosey.", "input": "", "output": "i'm not being nosey. i'm just asking."}
+{"instruction": "yes, it is.", "input": "", "output": "i'll put on my cap."}
+{"instruction": "well, the democratic party says it was an honest election.", "input": "", "output": "of course they say that\u0097their man won!"}
+{"instruction": "she asked you about your pineapples?", "input": "", "output": "i told her i had gotten the last two on the shelf, but i offered her one of mine."}
+{"human": "what does that have to do with it?", "assistant": "rich people think they're better than us."}
+{"human": "then you flew back home that evening?", "assistant": "yes. when we landed, tv reporters and the army band were there."}
+{"human": "i've never been to a french restaurant.", "assistant": "i think you'll love the food."}
+{"human": "this looks like a nice table.", "assistant": "no, it's too close to the salad bar."}
+{"human": "they always make \"what's next\" sound exciting, but it never is.", "assistant": "it's more like news for kids."}
+{"human": "no. it costs too much money.", "assistant": "doesn't crime cost more than police?"}
+{"human": "there must be something on tv!", "assistant": "nothing that's interesting."}
+{"instruction": "that's true. a cemetery is for dead people, not living people.", "input": "", "output": "we figure our kids can visit us whenever they go to the beach."}
+{"instruction": "i bought it on a hunch.", "input": "", "output": "you didn't read about the company first?"}
+{"instruction": "of course they're clean. you left all the mud on the carpet.", "input": "", "output": "okay, i'll get the vacuum cleaner."}
+{"instruction": "maybe he's just a liar.", "input": "", "output": "maybe i'll vote for someone else, too."}
+{"human": "what did you do?", "assistant": "i stood on the great wall and looked all around."}
+{"human": "look at this traffic.", "assistant": "i'd rather not."}
+{"human": "then maybe it's in your genes.", "assistant": "you might be right."}
+{"human": "that sounds like a nice date.", "assistant": "yes, it was pleasant."}
+{"human": "do you think i'm getting fat?", "assistant": "i didn't say that."}
+{"instruction": "what time?", "input": "", "output": "it starts at 8 o'clock."}
+{"human": "i don't know anyone who likes it.", "assistant": "some of it is okay, i guess."}
+{"human": "and i have to take care of our children.", "assistant": "are you going to start a family?"}
+{"human": "natural food has more vitamins.", "assistant": "and it's just as easy to prepare."}
+{"instruction": "how rude.", "input": "", "output": "but i got lucky a few minutes later."}
+{"human": "he said a doctor helped him with a personal problem.", "assistant": "he said he wasn't using drugs."}
+{"human": "yes, but they seem to have legs.", "assistant": "tomorrow i'm going to buy an electric sharpener."}
+{"human": "so was i.", "assistant": "i had to bring work home with me."}
+{"human": "well, it's an hour to get there, if there are no traffic problems.", "assistant": "so maybe we better leave at 8:15?"}
+{"instruction": "this is a nice neighborhood.", "input": "", "output": "the streets are clean and quiet."}
+{"human": "but he didn't have a chance. nobody voted for him!", "assistant": "sooner or later, voters will wake up."}
+{"instruction": "that's the reason it was such a great game.", "input": "", "output": "the next game, i will definitely be there."}
+{"human": "i think it's the ice cream.", "assistant": "you started eating ice cream?"}
+{"instruction": "high school.", "input": "", "output": "i teach high school english."}
+{"human": "perfect. we don't have to listen to barking dogs.", "assistant": "and there are only six units in the whole building."}
+{"human": "i hate looking for an apartment.", "assistant": "me, too."}
+{"instruction": "it usually gets here at noon on tuesday, which is tomorrow.", "input": "", "output": "i'll just take it out to the street tomorrow morning."}
+{"instruction": "people are friendly.", "input": "", "output": "yes, they are."}
+{"instruction": "i like the beautiful photos of the houses for sale.", "input": "", "output": "i always read the film reviews."}
+{"instruction": "if you got laid off, you'd be flipping hamburgers, too.", "input": "", "output": "oh great, we could both work at burger king."}
+{"instruction": "this time they have charged him with murder.", "input": "", "output": "so maybe he'll go to jail forever?"}
+{"human": "maybe i know, but how could you know?", "assistant": "because i was watching you."}
+{"human": "the police need to shoot all the bears.", "assistant": "you don't solve a problem by shooting it."}
+{"human": "what have you heard about it?", "assistant": "it's based on a true story about a divorced man and his young son."}
+{"instruction": "maybe he had a good reason.", "input": "", "output": "maybe he's just a liar."}
+{"instruction": "do you know what movie you're going to watch?", "input": "", "output": "i don't know, but was there a certain movie you wanted to see?"}
+{"instruction": "next time you go to the market, let me go with you.", "input": "", "output": "no, thank you. all you want to eat are hot dogs and candy bars."}
+{"instruction": "even if it's only for a short while.", "input": "", "output": "it's always good to have friends."}
+{"human": "well, if you bring your receipt, maybe they'll give you $400.", "assistant": "i'll keep my receipt and my gun."}
+{"instruction": "it's sunday.", "input": "", "output": "so?"}
+{"instruction": "i really like that outfit.", "input": "", "output": "thanks. i think you look nice today, too."}
+{"human": "oh my god, that's great!", "assistant": "are you going to go and visit her and the baby?"}
+{"instruction": "what's wrong with the bed?", "input": "", "output": "look at this sheet."}
+{"instruction": "i've been really busy.", "input": "", "output": "doing what?"}
+{"human": "i went to hawaii on vacation.", "assistant": "did you like it?"}
+{"human": "i'll help you.", "assistant": "okay, i'll get a bucket."}
+{"human": "why don't you go to bed?", "assistant": "i want to watch this tv show."}
+{"instruction": "who?", "input": "", "output": "two students from usc."}
+{"human": "no. that will cost too much money.", "assistant": "so it's better to save money than to have an honest election?"}
+{"human": "well, i think you look nice today too.", "assistant": "thanks. i found these new shoes earlier at the store."}
+{"instruction": "who would turn in a gun for $200?", "input": "", "output": "that isn't a good deal?"}
+{"human": "well, you're supposed to be working.", "assistant": "yes, but i will always pet the friendly dogs."}
+{"instruction": "what's the matter with that?", "input": "", "output": "her mom is a great cook."}
+{"human": "tomorrow i'm going to buy an electric sharpener.", "assistant": "get one with the rubber suction cups on the bottom."}
+{"human": "i think that i might.", "assistant": "good! i just thought i'd let you know."}
+{"instruction": "the weatherman tells us the temperature in every town.", "input": "", "output": "the sports guy shows us players fighting."}
+{"instruction": "what's \"variety?", "input": "", "output": "different things\u0097not the same thing all the time."}
+{"instruction": "it's too bad that i couldn't make it. who won?", "input": "", "output": "our team played hard and won."}
+{"human": "i vacuumed the entire house.", "assistant": "that's a lot of work."}
+{"human": "they could even crack their head open.", "assistant": "we should stand here till the clean-up person gets here."}
+{"instruction": "people talk about current events.", "input": "", "output": "what do they say?"}
+{"human": "what kind?", "assistant": "a ham sandwich."}
+{"instruction": "no, this is the tree.", "input": "", "output": "did someone steal it?"}
+{"instruction": "if i catch you, you'll be sorry.", "input": "", "output": "you won't catch me, because i love you. i'm not a cheater."}
+{"instruction": "i think stamps used to cost a penny.", "input": "", "output": "that was a long time ago."}
+{"human": "if we are good, we will be happy in heaven with god.", "assistant": "that's what many people believe."}
+{"instruction": "i don't think so.", "input": "", "output": "is there a reason why?"}
+{"instruction": "so are we going to buy it?", "input": "", "output": "i'm afraid not."}
+{"instruction": "okay. i'll return your pen when i'm done.", "input": "", "output": "take your time."}
+{"instruction": "why not?", "input": "", "output": "they have to see it happen."}
+{"instruction": "i voted for obama.", "input": "", "output": "me too."}
+{"human": "that should be a nice trip. lots of fun, and lots of food.", "assistant": "i have no idea how much it will cost."}
+{"instruction": "i wonder if every language has jokes.", "input": "", "output": "of course! people everywhere like good jokes."}
+{"human": "i called hp about my computer.", "assistant": "what did they say?"}
+{"human": "a button is hard to find. did you look in your pant cuffs?", "assistant": "that's a good idea."}
+{"instruction": "i have to go to the bathroom.", "input": "", "output": "why didn't you go before we left?"}
+{"instruction": "what else do they talk about?", "input": "", "output": "they talk about food and the weather."}
+{"instruction": "all i get is a black screen.", "input": "", "output": "what's the matter?"}
+{"instruction": "where are we going?", "input": "", "output": "into the mountains."}
+{"instruction": "i hope we'll see a home run.", "input": "", "output": "i hope we'll catch a foul ball."}
+{"instruction": "when did you lose it?", "input": "", "output": "i think i lost it today. i used it yesterday."}
+{"instruction": "no. the teacher doesn't permit calculators.", "input": "", "output": "how about a dictionary?"}
+{"instruction": "i wonder if i should bring my gloves.", "input": "", "output": "maybe you should, just in case it gets colder."}
+{"human": "are you ready?", "assistant": "ready for what?"}
+{"human": "if you want to lose fat, you've got to do this hike every day.", "assistant": "okay, but let's hike in town. at least there are cats and dogs to see."}
+{"human": "you have pretty eyes.", "assistant": "thank you. so do you."}
+{"instruction": "is there a reason why?", "input": "", "output": "i just really don't want to go."}
+{"human": "no. that's incomplete.", "assistant": "what do you mean?"}
+{"human": "i will have a radio in every room of my house.", "assistant": "remind me to never visit you."}
+{"instruction": "i hate flossing more than brushing!", "input": "", "output": "i can't wait till all my teeth fall out."}
+{"instruction": "which one?", "input": "", "output": "any one. i need to sharpen this pencil."}
+{"human": "it's not bad. there are a lot of people there.", "assistant": "good luck with that."}
+{"human": "that's a good idea.", "assistant": "i bought some new shoes."}
+{"instruction": "why don't you look outside?", "input": "", "output": "okay. it looks like rain."}
+{"human": "let me step outside and see.", "assistant": "it's a little chilly, right?"}
+{"human": "what was your last job?", "assistant": "i was a painter."}
+{"instruction": "he thinks i have too much stress.", "input": "", "output": "stress causes your stomachaches?"}
+{"instruction": "and then he turned right around.", "input": "", "output": "maybe you're right."}
+{"human": "my father found a new girlfriend.", "assistant": "that's too bad."}
+{"human": "i parked it right here.", "assistant": "are you sure?"}
+{"instruction": "do they help you run faster?", "input": "", "output": "no, but my feet don't hurt anymore."}
+{"human": "i don't know. whenever the weather comes on, i switch channels.", "assistant": "what was the lead story on the news?"}
+{"human": "nothing that would pass as news.", "assistant": "what's the weather going to be like this weekend?"}
+{"human": "you like the rain?", "assistant": "the sky looks so clean after it rains. i love it."}
+{"human": "like what, for instance?", "assistant": "i enjoy rock and r&b."}
+{"human": "i can't believe he hasn't crashed.", "assistant": "how fast is he going?"}
+{"human": "then the waiter will give you a big smile as he brings you the new steak.", "assistant": "where do you get these crazy ideas?"}
+{"instruction": "well, more than 50 million people voted for mccain.", "input": "", "output": "that's 50 million people who don't love obama."}
+{"human": "then wait till you find a tissue.", "assistant": "i couldn't wait. it was an emergency."}
+{"instruction": "where are the seats?", "input": "", "output": "they're behind the outfield."}
+{"instruction": "seriously, it looks really nice on you. where did you buy it from?", "input": "", "output": "i bought it from the macy's at the santa anita mall."}
+{"human": "he changed the game.", "assistant": "yes, he made the home run popular."}
+{"human": "what's up?", "assistant": "nothing much, what's going on?"}
+{"human": "what do you mean?", "assistant": "the car isn't here."}
+{"human": "well, you'd better get her something.", "assistant": "i'll get her a nice card."}
+{"human": "but, mom, i'm not dirty.", "assistant": "you need a bath every day."}
+{"instruction": "i was scratching my nose.", "input": "", "output": "i think i know the difference between picking and scratching."}
+{"human": "of course. but i don't have cable.", "assistant": "you don't need to have cable, but you do need a good antenna."}
+{"instruction": "he will be a great president.", "input": "", "output": "everyone likes him."}
+{"instruction": "yes. it isn't there, either.", "input": "", "output": "it's probably around somewhere."}
+{"human": "i hope i don't come back as a fish.", "assistant": "i hope i come back as a cat."}
+{"human": "i don't like our flag.", "assistant": "what's the matter with it?"}
+{"human": "why did you get a poodle?", "assistant": "it's my mom's dog."}
+{"human": "there's a real nice park nearby.", "assistant": "yes, there is."}
+{"instruction": "what was it like?", "input": "", "output": "it was like the real thing."}
+{"instruction": "how fast is he going?", "input": "", "output": "they say he's going 80 miles per hour."}
+{"instruction": "what's wrong?", "input": "", "output": "it's not orange!"}
+{"instruction": "and they were expensive houses.", "input": "", "output": "i feel so sorry for those people."}
+{"human": "it has great weather all year long.", "assistant": "it has the rose parade."}
+{"instruction": "that's not right!", "input": "", "output": "when i started to cross the street, the white walk sign was blinking."}
+{"instruction": "there must be something on tv!", "input": "", "output": "nothing that's interesting."}
+{"human": "your daddy was a good little boy.", "assistant": "how do you know? were you his mommy, too?"}
+{"instruction": "he always visited hospitals to cheer up sick kids.", "input": "", "output": "there will never be another babe."}
+{"human": "i want this trip to be perfect, i hope it stays warm.", "assistant": "this california weather is so uncertain, it's impossible to know what'll happen."}
+{"human": "no, i had no idea.", "assistant": "well, she did, her baby was 8 pounds 6 ounces."}
+{"human": "do you want to go out to eat?", "assistant": "i'd like that."}
+{"human": "i think that it's going to rain.", "assistant": "i hope that it does rain."}
+{"instruction": "you can yell at them.", "input": "", "output": "and they will yell back at you."}
+{"human": "and now i'm glad that i didn't.", "assistant": "why's that?"}
+{"human": "they're in the kitchen drawer.", "assistant": "okay. i just put a stamp on the envelope."}
+{"instruction": "what kind?", "input": "", "output": "i like to listen to rock and r&b."}
+{"instruction": "i don't really feel too well yet.", "input": "", "output": "do you want anything to make you feel better?"}
+{"instruction": "here comes the waiter. see if his hands and nails are clean.", "input": "", "output": "well, the waiter looked clean, so i guess it's okay to eat here."}
+{"human": "did you like it?", "assistant": "i loved it. i want to live there."}
+{"instruction": "i injured my back one time just by sneezing.", "input": "", "output": "you should see a doctor."}
+{"human": "of course. we gave him a big carrot for a nose.", "assistant": "let me help you make one this year."}
+{"human": "i think some fish have blue eyes.", "assistant": "i hope i don't come back as a fish."}
+{"human": "i'm watching you.", "assistant": "i'm an open book. watch me all you want."}
+{"human": "does it have a price tag?", "assistant": "yes, it does. it's only $20."}
+{"human": "then why are some schools telling the kids to stay home?", "assistant": "the government says to wash our hands frequently, and we'll all be okay."}
+{"human": "get better.", "assistant": "thanks a lot."}
+{"instruction": "then we went to a jazz club.", "input": "", "output": "that sounds like a nice date."}
+{"instruction": "let's go to the lake.", "input": "", "output": "yes. the lake is only 10 miles away."}
+{"instruction": "the walls were so thin.", "input": "", "output": "all day long we heard tvs or telephones."}
+{"instruction": "let me think about it.", "input": "", "output": "why do you have to think about it?"}
+{"instruction": "i'll keep my receipt and my gun.", "input": "", "output": "i didn't know you had a gun."}
+{"human": "some people have good noses.", "assistant": "i wish i had a good nose. mine is way too big."}
+{"human": "that's six times a year!", "assistant": "yes, and it takes about five minutes each time."}
+{"human": "yes. we need to think green, save water, and stop using plastic bags.", "assistant": "how about if i take shorter showers?"}
+{"human": "what do you mean?", "assistant": "every morning you get up late and rush off to work late."}
+{"human": "well, nobody else does, so why should i?", "assistant": "that's not the attitude of a good driver."}
+{"human": "because we need to buy a house.", "assistant": "but a house is so expensive."}
+{"instruction": "i'll bet they were drinking.", "input": "", "output": "a third guy punched one of the two guys."}
+{"instruction": "what about that new game show?", "input": "", "output": "which one?"}
+{"instruction": "well, that's okay, as long as it helps him relax and think more clearly.", "input": "", "output": "yes, we need a relaxed president who thinks clearly."}
+{"instruction": "you should stop drinking coffee.", "input": "", "output": "look at these marks on my arms."}
+{"instruction": "the mayor says the crime rate is going down.", "input": "", "output": "then why does everyone lock their doors?"}
+{"instruction": "i like the different instruments that they use.", "input": "", "output": "that's a good reason to like something."}
+{"instruction": "the speed limit is 65!", "input": "", "output": "well, that's between 2:00 and 4:00 a.m."}
+{"human": "you can borrow mine.", "assistant": "thank you. i'll buy a new one tomorrow."}
+{"human": "what's the weather going to be like? i may want to go too.", "assistant": "the weather this weekend is supposed to be warm."}
+{"instruction": "bacon and eggs?", "input": "", "output": "with toast, ham, sausage, fresh fruit, and juice."}
+{"instruction": "i love all their songs.", "input": "", "output": "i don't know which one i like the best."}
+{"human": "i was there when i was a kid.", "assistant": "how did you like it?"}
+{"human": "then they're worth every penny.", "assistant": "you might want to buy a pair."}
+{"human": "he might say i'm okay.", "assistant": "he might say you have bone cancer."}
+{"human": "he had cigarettes, but no battery.", "assistant": "it happens all the time."}
+{"human": "why not? everyone knows he's a firebug. he loves to start fires.", "assistant": "i don't know. sometimes the law doesn't make sense."}
+{"instruction": "pasta is processed food. potatoes are natural food.", "input": "", "output": "natural food has more vitamins."}
+{"human": "then we can scrub it with a wet sponge and soap.", "assistant": "after that, we can dry it with a towel."}
+{"instruction": "a cooking show follows a sewing show.", "input": "", "output": "a travel show follows another travel show."}
+{"human": "more and more people are using macs.", "assistant": "but 90 percent of the world uses pcs."}
+{"human": "i'll have to try them sometime.", "assistant": "they're best when they're hot."}
+{"instruction": "what's the matter with green eyes?", "input": "", "output": "nothing, except my favorite color is blue."}
+{"human": "i attended school today. did you?", "assistant": "i wasn't able to attend school because i was feeling ill."}
+{"instruction": "what happened before?", "input": "", "output": "my hard drive crashed."}
+{"instruction": "people are always getting up to use the bathroom.", "input": "", "output": "kids are crying or climbing over you."}
+{"instruction": "i bet i've lost a couple of pounds already.", "input": "", "output": "all you've lost is some sweat."}
+{"human": "no one would hire you to flip hamburgers.", "assistant": "have you heard something that you're not telling me?"}
+{"human": "so many people are out of work.", "assistant": "i still have my job, thank goodness."}
+{"instruction": "i think we'll be there in half an hour.", "input": "", "output": "i hope so. i have to go to the bathroom."}
+{"instruction": "i need a new computer.", "input": "", "output": "what's the matter with yours?"}
+{"human": "that's pretty simple.", "assistant": "then i add butter, salt, and pepper."}
+{"instruction": "how often do i have to do that?", "input": "", "output": "once every two months."}
+{"instruction": "it's common sense.", "input": "", "output": "it's so tight that it's hard for me to breathe."}
+{"instruction": "but what if i'm a fish in my next life?", "input": "", "output": "i think some fish have blue eyes."}
+{"instruction": "yes, i do.", "input": "", "output": "when did you learn how to do that?"}
+{"human": "what happened to the other student?", "assistant": "he landed on the hood of the car."}
+{"human": "i would like to take a trip to the beach this weekend.", "assistant": "a trip to the beach would be fun. how is the weather going to be?"}
+{"instruction": "yes. it gets a little cool at night.", "input": "", "output": "bring a glove to catch a foul ball."}
+{"human": "i don't know which one i like the best.", "assistant": "i like the ones i can sing along with."}
+{"human": "what happened?", "assistant": "i got laid off because there was no work."}
+{"instruction": "and the pickles were great, too.", "input": "", "output": "tomorrow we'll have rice and fish for lunch."}
+{"human": "then you can wipe your seat and window.", "assistant": "people will think i'm strange."}
+{"instruction": "i'll make an appointment tomorrow.", "input": "", "output": "i'll get the yellow pages for an eye doctor."}
+{"human": "yes, you chased me and then you caught me.", "assistant": "now you're mine forever."}
+{"human": "you're supposed to stay home all day.", "assistant": "that's what i do."}
+{"human": "what are you going to do with them?", "assistant": "i'm going to give them away. do you want one?"}
+{"instruction": "i'd have to say babe ruth.", "input": "", "output": "most people would say that."}
+{"instruction": "yes. i called for a clean-up.", "input": "", "output": "a puddle of water is very dangerous."}
+{"instruction": "i eat two apples, one banana, and one orange every day.", "input": "", "output": "well, there's nothing wrong with that."}
+{"human": "you need a bath every day.", "assistant": "why?"}
+{"human": "he never wins your money?", "assistant": "nope, and it drives him crazy."}
+{"human": "what's your email address?", "assistant": "it's bluedog123."}
+{"human": "it was on sale.", "assistant": "how much did you buy?"}
+{"human": "what did she say?", "assistant": "she laughed! she didn't believe me."}
+{"human": "well, he can't win unless you and others vote for him.", "assistant": "but even if my candidate wins, he'll break his promises."}
+{"human": "i hate shaving.", "assistant": "me too."}
+{"human": "don't wipe your nose on your sleeve.", "assistant": "but i don't have a tissue."}
+{"human": "thank you very much.", "assistant": "i am really excited for you."}
+{"instruction": "but big earthquakes happen only once in a while.", "input": "", "output": "once in a while is once too many."}
+{"instruction": "i thought you had a job.", "input": "", "output": "i did."}
+{"human": "now it's like riding a bus.", "assistant": "you're jammed in with people all around you."}
+{"human": "they might think i'm stupid.", "assistant": "they're not going to think that! they'll be glad to help you."}
+{"human": "i really wish i went to the game.", "assistant": "it was the best game ever."}
+{"instruction": "it was before i was born.", "input": "", "output": "now a stamp is 42 cents."}
+{"instruction": "and grow a beard?", "input": "", "output": "sure. why not?"}
+{"human": "remember to put air in your tires.", "assistant": "how often do i have to do that?"}
+{"instruction": "no, but my feet don't hurt anymore.", "input": "", "output": "then they're worth every penny."}
+{"instruction": "yes, they don't like troublemakers or complainers.", "input": "", "output": "i can't quit, because i'm making a good salary."}
+{"instruction": "what's so good about it?", "input": "", "output": "they have interesting lawsuits."}
+{"human": "what do you put in it?", "assistant": "just lettuce, tomato, and celery."}
+{"human": "what time does the recycle truck come by?", "assistant": "it usually gets here at noon on tuesday, which is tomorrow."}
+{"instruction": "what do they say about us?", "input": "", "output": "they say that we are funny-looking."}
+{"human": "most people would say that.", "assistant": "he changed the game."}
+{"human": "i was looking at something else.", "assistant": "oh, really? then spend tonight looking at the sofa."}
+{"instruction": "his nails were black!", "input": "", "output": "that's disgusting."}
+{"human": "the cat is meowing. he's hungry.", "assistant": "okay. i'll feed him right now."}
+{"instruction": "i know. i went to china yesterday.", "input": "", "output": "what did you do?"}
+{"instruction": "because i want to make a lot of money.", "input": "", "output": "there are a lot of poor people in new york."}
+{"human": "i have to be there two hours early.", "assistant": "so we have to be at the airport at 10:15."}
+{"instruction": "put on a coat and tie.", "input": "", "output": "why?"}
+{"human": "i'm going to just hope that the bathroom is clean.", "assistant": "you're not going to examine it before we order dinner?"}
+{"human": "have you heard from them?", "assistant": "not yet. it's been a week."}
+{"instruction": "you won't catch me, because i love you. i'm not a cheater.", "input": "", "output": "i will poke your eyes out. "}
+{"human": "i want to show you my new car.", "assistant": "you bought a new car?"}
+{"instruction": "you shouldn't make him wait.", "input": "", "output": "i was doing my homework."}
+{"human": "i appreciate that.", "assistant": "you have no idea how happy i am for you."}
+{"human": "i need a job.", "assistant": "i thought you had a job."}
+{"instruction": "if you pour water into a glass, the water goes down into the glass.", "input": "", "output": "of course it does."}
+{"instruction": "oh, really? who won?", "input": "", "output": "our school did. they played really well."}
+{"human": "i'll use a damp cloth.", "assistant": "don't let water get into any of the cracks."}
+{"human": "it's not too much, only about $85.", "assistant": "plus installation?"}
+{"human": "i wish my eyes were blue.", "assistant": "what's the matter with green eyes?"}
+{"instruction": "so did i.", "input": "", "output": "i didn't even have lunch."}
+{"human": "did you go to school today?", "assistant": "yeah, i went to school today. were you there?"}
+{"instruction": "first of all, he was half an hour late.", "input": "", "output": "that's not a good start."}
+{"human": "what's the matter with it?", "assistant": "it's on the corner."}
+{"human": "number one, it's too slow.", "assistant": "you're right. a car is faster."}
+{"instruction": "that is a lot of friends. do you have a best friend?", "input": "", "output": "of course. i have lots of best friends."}
+{"human": "dating will be the furthest thing from my mind.", "assistant": "that's what you say now. wait till you're 50."}
+{"human": "no, the police don't care.", "assistant": "why not?"}
+{"instruction": "why do you say that?", "input": "", "output": "the speed limit is 65."}
+{"instruction": "okay. it looks like rain.", "input": "", "output": "why do you say that?"}
+{"human": "it wouldn't rain in the middle of the summer.", "assistant": "it wouldn't seem right if it started raining right now."}
+{"human": "a bull chased a man in a supermarket.", "assistant": "wasn't there anything about octo-mom?"}
+{"instruction": "don't we have about five sharpeners?", "input": "", "output": "yes, but they seem to have legs."}
+{"instruction": "i couldn't go to school today, i was sick.", "input": "", "output": "that's horrible. i'd be happy to give you the assignments from english class."}
+{"instruction": "i hope i come back as a cat.", "input": "", "output": "cats have beautiful eyes."}
+{"human": "even if it's only for a short while.", "assistant": "it's always good to have friends."}
+{"human": "look at the car chase on tv!", "assistant": "that driver is crazy."}
+{"human": "let's go for a ride.", "assistant": "where are we going?"}
+{"human": "it's too far from your job, isn't it?", "assistant": "i can't spend four hours on the road every day."}
+{"instruction": "he's old enough to be my father, yet he asked me out.", "input": "", "output": "well, you can't blame a man for asking."}
+{"instruction": "i saw what you did.", "input": "", "output": "i didn't do anything."}
+{"instruction": "that woman is a very good singer.", "input": "", "output": "yes, but she looks like a man."}
+{"instruction": "i did too.", "input": "", "output": "your day was just like mine."}
+{"instruction": "who were you writing to?", "input": "", "output": "it's to my mom."}
+{"human": "what kind of change?", "assistant": "they want tax cuts."}
+{"instruction": "you're funny.", "input": "", "output": "what did you say? i think i've gone deaf."}
+{"human": "they were about forty dollars.", "assistant": "i think i'm going to go buy myself a pair."}
+{"instruction": "where does cheese come from?", "input": "", "output": "it comes from cows."}
+{"instruction": "i didn't know you had a gun.", "input": "", "output": "everyone in america should have a gun."}
+{"instruction": "sounds good. what did you have in mind?", "input": "", "output": "i was thinking about seeing a movie."}
+{"human": "how smart are you?", "assistant": "i don't know. i think i'm average."}
+{"human": "i think we should really do something sometime.", "assistant": "that should be loads of fun."}
+{"instruction": "teaching is a great job.", "input": "", "output": "it's the best job i've ever had."}
+{"human": "i saw it eight times.", "assistant": "i have the dvd."}
+{"instruction": "how much were they?", "input": "", "output": "they were on sale for $80."}
+{"human": "are you going to be buried next to each other?", "assistant": "oh, no. our ashes will be shaken into the ocean."}
+{"instruction": "he drew two butterflies and a flower on a napkin in a restaurant.", "input": "", "output": "did he sign it?"}
+{"instruction": "people will tell you if they have a good hand.", "input": "", "output": "how do they do that?"}
+{"human": "thank you very much.", "assistant": "i wish i had a talent like that."}
+{"instruction": "so? that's a ticket?", "input": "", "output": "yes, it's a $140 ticket."}
+{"instruction": "no.", "input": "", "output": "he had dirty fingernails."}
+{"instruction": "yes, i know. some people are rude.", "input": "", "output": "i always try to be polite."}
+{"human": "i think he wanted to cool off.", "assistant": "he swam right up to you."}
+{"instruction": "why did your parents get divorced?", "input": "", "output": "my father found a new girlfriend."}
+{"instruction": "okay, what do you want to sell?", "input": "", "output": "cigarette lighters. i'll make a fortune."}
+{"instruction": "that's a good deal.", "input": "", "output": "yes, even though some of the potatoes had eyes."}
+{"instruction": "because you're thinking too much.", "input": "", "output": "so i should stop thinking?"}
+{"instruction": "my hard drive crashed.", "input": "", "output": "oh, no. that's bad news."}
+{"instruction": "this trail is hard to climb.", "input": "", "output": "especially on a hot day like this."}
+{"instruction": "the forecast says that it will be warm on the weekend.", "input": "", "output": "so do you think it'll be perfect weather for the beach?"}
+{"human": "i'm going to have to say that superbad is the best movie ever.", "assistant": "you think so, how come?"}
+{"human": "there's something wrong with my right hand.", "assistant": "what's wrong with it?"}
+{"human": "the pants are fine, but the pocket has a huge hole in it.", "assistant": "you shouldn't carry your keys and pens in your pocket."}
+{"instruction": "i'm watching you.", "input": "", "output": "i'm an open book. watch me all you want."}
+{"human": "i'll check to make sure that all the windows are shut.", "assistant": "it should be warmer in a few minutes."}
+{"instruction": "i go to pcc.", "input": "", "output": "do you like it there?"}
+{"instruction": "i thought you had an elephant in your house.", "input": "", "output": "you're funny."}
+{"human": "did she get a nice job?", "assistant": "she got an \"everything\" job!"}
+{"human": "okay, i'll get a bucket.", "assistant": "i'll rinse the car first."}
+{"instruction": "like what, for instance?", "input": "", "output": "i enjoy rock and r&b."}
+{"human": "i never used to buy swiss cheese.", "assistant": "why not?"}
+{"instruction": "because a puppy costs money.", "input": "", "output": "no, it doesn't. puppies are free."}
+{"human": "what do you mean?", "assistant": "every time we land or take off, my ears hurt so much."}
+{"instruction": "yes, he was on the tv news today.", "input": "", "output": "every easter sunday he gives away money."}
+{"human": "and the pickles were great, too.", "assistant": "tomorrow we'll have rice and fish for lunch."}
+{"human": "it's called poker.", "assistant": "is it easy to learn?"}
+{"instruction": "then why can't i quit?", "input": "", "output": "you have to believe in yourself."}
+{"instruction": "okay, let's go see a movie.", "input": "", "output": "until then."}
+{"human": "i will rub gently but firmly.", "assistant": "do it quickly, please, so i can change channels during commercials."}
+{"instruction": "have you gone to school today?", "input": "", "output": "i went to school today. did you go to school?"}
+{"human": "do you have a girlfriend?", "assistant": "no, i don't. do you?"}
+{"instruction": "really? what kind of shoes are they?", "input": "", "output": "these are called all star chuck taylors."}
+{"human": "ready for the big switch.", "assistant": "what are you talking about?"}
+{"instruction": "this is a popular restaurant, isn't it?", "input": "", "output": "yes, but it isn't a fast-food restaurant, is it?"}
+{"instruction": "me too.", "input": "", "output": "he will be a great president."}
+{"instruction": "we'll be at mcdonald's in just a few minutes.", "input": "", "output": "i hope they are fast minutes."}
+{"instruction": "do you want to go fishing?", "input": "", "output": "yes. that's a good idea."}
+{"human": "turn on the air conditioner.", "assistant": "it doesn't work."}
+{"instruction": "would you like to see a movie with me and my friend?", "input": "", "output": "do you know what movie you're going to watch?"}
+{"human": "i buried him with his cell phone.", "assistant": "what will you do when the battery dies?"}
+{"instruction": "you have pretty eyes.", "input": "", "output": "thank you. so do you."}
+{"instruction": "i like my food hot and fresh.", "input": "", "output": "you like to see it disappear."}
+{"human": "what did you do?", "assistant": "i turned up the volume."}
+{"instruction": "did he set a new record?", "input": "", "output": "yes, i think he did."}
+{"instruction": "but it won't stop other players from using drugs.", "input": "", "output": "no. everyone always figures that they won't get caught."}
+{"human": "all the tv stations are going to go digital.", "assistant": "yes, that will occur next month."}
+{"human": "maybe i should see a doctor.", "assistant": "doctors are too expensive."}
+{"instruction": "what do you want to do next time?", "input": "", "output": "would you like to go to dinner or something?"}
+{"human": "you have to change their diapers.", "assistant": "i have to feed them."}
+{"human": "you're right. you have to stand in the aisle.", "assistant": "number five, it's unsafe."}
+{"human": "i sprinkled salt and pepper on the food before i tasted it.", "assistant": "what's the matter with that?"}
+{"human": "that's not a good start.", "assistant": "then he didn't bother to apologize."}
+{"instruction": "he swam right up to you.", "input": "", "output": "and then he turned right around."}
+{"human": "obama's got four years to make everyone happy.", "assistant": "he's never going to make everyone happy."}
+{"human": "i'm still feeling under the weather.", "assistant": "would you like anything for your stomach?"}
+{"instruction": "i'm going to the bank.", "input": "", "output": "what do you need to do?"}
+{"human": "that woman is a very good singer.", "assistant": "yes, but she looks like a man."}
+{"human": "i'm going to change the light bulb. it burnt out.", "assistant": "what are you standing on?"}
+{"instruction": "so do i.", "input": "", "output": "a long time ago, flying used to be okay."}
+{"instruction": "that must have made you feel really special.", "input": "", "output": "oh, it did. there were about 300 people there to honor us."}
+{"instruction": "i enjoyed talking to you too.", "input": "", "output": "we should hang out some time."}
+{"instruction": "then the waiter will give you a big smile as he brings you the new steak.", "input": "", "output": "where do you get these crazy ideas?"}
+{"instruction": "the car isn't here.", "input": "", "output": "where did you park it?"}
+{"human": "i don't like practice.", "assistant": "me neither. it's boring."}
+{"human": "so we've got to sell before property values go down?", "assistant": "yes. i still can't believe our city council allowed this building."}
+{"human": "a family with only one baby.", "assistant": "that's a good idea."}
+{"human": "let's go to the animal shelter.", "assistant": "what do you want to do?"}
+{"human": "they pay money to play this silly game!", "assistant": "i think golfers have a mental problem."}
+{"human": "you can sew it up or use an iron-on patch.", "assistant": "tell me about this patch."}
+{"human": "such as?", "assistant": "yesterday, a woman complained about a cell phone she bought on ebay."}
+{"human": "that's a lot of money.", "assistant": "he gave $100 to people in wheelchairs."}
+{"human": "i'm not sure yet.", "assistant": "well, did you want to go see a movie with me?"}
+{"instruction": "only if my candidate wins.", "input": "", "output": "well, he can't win unless you and others vote for him."}
+{"instruction": "what did you do at night?", "input": "", "output": "at night i went out to eat. the food was delicious."}
+{"instruction": "no, today people like lots of action.", "input": "", "output": "i like a good story."}
+{"human": "did you see the woman with the new face?", "assistant": "did she get a nice job?"}
+{"human": "what else?", "assistant": "i like all my classmates, too."}
+{"instruction": "no, he didn't have time to do that.", "input": "", "output": "well, he's got plenty of time now!"}
+{"instruction": "do you like it?", "input": "", "output": "oh, yes, i really like it."}
+{"human": "basically, i've been working too.", "assistant": "well whatever, i'm glad you came."}
+{"human": "i hope i come back as a cat.", "assistant": "cats have beautiful eyes."}
+{"instruction": "i think it will only take you a year or two.", "input": "", "output": "how soon can we begin?"}
+{"instruction": "your orange isn't orange?", "input": "", "output": "no, it's dark pink!"}
+{"instruction": "i saw it eight times.", "input": "", "output": "i have the dvd."}
+{"instruction": "have you heard what happened?", "input": "", "output": "heard what?"}
+{"human": "i need pencils.", "assistant": "anything else?"}
+{"instruction": "i found a button in my pant cuffs one time.", "input": "", "output": "let me look. no, it's not there."}
+{"human": "prove it.", "assistant": "how can i prove it?"}
+{"human": "maybe in your next life you'll have blue eyes.", "assistant": "but what if i'm a fish in my next life?"}
+{"instruction": "they think it's cool.", "input": "", "output": "cigarettes stink."}
+{"human": "but that's impossible.", "assistant": "officials said that it's possible."}
+{"instruction": "perfect. we don't have to listen to barking dogs.", "input": "", "output": "and there are only six units in the whole building."}
+{"human": "my hard drive crashed.", "assistant": "oh, no. that's bad news."}
+{"human": "it's probably around somewhere.", "assistant": "oh, well, it only cost me a dollar."}
+{"instruction": "i'll squeeze the cloth so it's almost dry.", "input": "", "output": "don't rub the numbers off the remote."}
+{"instruction": "maybe you should record it.", "input": "", "output": "the tape recorder is broken."}
+{"instruction": "we get a lot of things from cows, don't we?", "input": "", "output": "yes. a cow is man's best friend."}
+{"human": "he's a famous artist.", "assistant": "he drew two butterflies and a flower on a napkin in a restaurant."}
+{"instruction": "what do you mean?", "input": "", "output": "are there going to be layoffs at this place?"}
+{"human": "then we'll just make a u-turn.", "assistant": "and then we can turn right at the light."}
+{"human": "i don't know. i think it's old age.", "assistant": "if it's old age, why don't both of your hands hurt?"}
+{"human": "are you going to travel alone?", "assistant": "no, my sister and i will travel together."}
+{"instruction": "so do i, like \"she loves you.\"", "input": "", "output": "she loves you, yeah, yeah, yeah!..."}
+{"human": "this is a popular restaurant, isn't it?", "assistant": "yes, but it isn't a fast-food restaurant, is it?"}
+{"human": "i was a painter.", "assistant": "what happened?"}
+{"human": "see you soon.", "assistant": "goodbye."}
+{"human": "people think you might be sick.", "assistant": "who thinks that?"}
+{"human": "how long did it take?", "assistant": "it took us all day."}
+{"human": "if not, your nose will wake you up.", "assistant": "you mean i will smell the food cooking?"}
+{"instruction": "why do they want tax cuts?", "input": "", "output": "because tax cuts will save them money."}
+{"instruction": "you're talking to her.", "input": "", "output": "i've called you a hundred times today."}
+{"human": "yes, i am really excited.", "assistant": "that's great. congratulations."}
+{"instruction": "what are you going to do with them?", "input": "", "output": "i'm going to give them away. do you want one?"}
+{"instruction": "yes, i think he did.", "input": "", "output": "well, i guess that's why he did it."}
+{"human": "i like to run around the bases.", "assistant": "i like to slide into the bases."}
+{"human": "he said he would buy her a nice ring.", "assistant": "what's wrong with that?"}
+{"human": "i did.", "assistant": "what happened?"}
+{"instruction": "i think i did something real stupid.", "input": "", "output": "what did you do?"}
+{"instruction": "no, he won't. some cars are doing 85.", "input": "", "output": "so the cop will stop those cars?"}
+{"instruction": "did you really?", "input": "", "output": "seriously, i am so excited."}
+{"human": "that's not my fault. you didn't tell me to wake you up.", "assistant": "well, i meant to."}
+{"instruction": "what kind of change?", "input": "", "output": "they want tax cuts."}
+{"instruction": "what woman?", "input": "", "output": "you know, that woman with the big boobs."}
+{"human": "the book is open.", "assistant": "see an eye doctor."}
+{"instruction": "that's what you think.", "input": "", "output": "if i smelled bad, i could smell me."}
+{"human": "what did they do in the old days?", "assistant": "they brushed with their fingers."}
+{"human": "of course i'm sure.", "assistant": "well, i have to go back upstairs anyway."}
+{"human": "i'm really glad that you came to see me.", "assistant": "i had to. i was missing you a lot."}
+{"human": "our room was right next to the elevator and the ice machine.", "assistant": "they added phony charges to our bill."}
+{"instruction": "oh, thank you. that's very nice of you.", "input": "", "output": "you would do the same for me."}
+{"instruction": "without gravity, you would go up.", "input": "", "output": "what do you mean?"}
+{"human": "it's the funniest movie that i've ever seen.", "assistant": "that's true. it is a very funny movie."}
+{"instruction": "i can't believe he won the election.", "input": "", "output": "only 15 percent of the voters turned out."}
+{"human": "that was a mistake.", "assistant": "he stayed on the thirteenth floor."}
+{"instruction": "how about this table?", "input": "", "output": "no, it's too close to the front door."}
+{"human": "they say they want change.", "assistant": "what kind of change?"}
+{"instruction": "that was a long time ago.", "input": "", "output": "it was before i was born."}
+{"human": "sure. why do you need it?", "assistant": "i want to buy lunch."}
+{"instruction": "they could even crack their head open.", "input": "", "output": "we should stand here till the clean-up person gets here."}
+{"human": "that's true. a cemetery is for dead people, not living people.", "assistant": "we figure our kids can visit us whenever they go to the beach."}
+{"human": "but most of those hurricanes are harmless.", "assistant": "excuse me. hurricane andrew destroyed 30,000 homes!"}
+{"human": "oh, a laptop, of course.", "assistant": "a pc or a mac?"}
+{"human": "two guys got into an argument.", "assistant": "i'll bet they were drinking."}
+{"instruction": "well, it was nice talking to you.", "input": "", "output": "it was nice talking to you too."}
+{"human": "i can smell you.", "assistant": "i can smell you, too."}
+{"human": "he wanted to take it home yesterday.", "assistant": "i wonder what he'll name it."}
+{"human": "i think i'll buy both of them.", "assistant": "you'd better try them on first."}
+{"human": "i didn't know you knew how to draw and paint.", "assistant": "i do it every once in a while."}
+{"instruction": "what do you do?", "input": "", "output": "i'm a babysitter."}
+{"human": "i got them for forty.", "assistant": "i think i might go and find me my own pair of chucks."}
+{"instruction": "thank you. i'll buy a new one tomorrow.", "input": "", "output": "what were you doing?"}
+{"human": "yes, but only the cheap tickets.", "assistant": "how much are they?"}
+{"instruction": "he's visiting other cities to get ideas.", "input": "", "output": "can't he just go online?"}
+{"human": "yes. i remember this big tree.", "assistant": "maybe it's the wrong tree."}
+{"human": "but work goes on forever!", "assistant": "we have to work for 30 years!"}
+{"human": "i got divorced two years ago.", "assistant": "why did you get divorced?"}
+{"human": "i want to buy lunch.", "assistant": "where's your money?"}
+{"human": "the home run hitter on drugs?", "assistant": "he said a doctor helped him with a personal problem."}
+{"instruction": "are you looking for another job?", "input": "", "output": "no, i'm looking for another family."}
+{"human": "where's your money?", "assistant": "it's not in my wallet."}
+{"instruction": "how are you doing today?", "input": "", "output": "i'm doing great. what about you?"}
+{"human": "that was a nice thing to say.", "assistant": "that's what i thought."}
+{"instruction": "i got laid off because there was no work.", "input": "", "output": "what else can you do?"}
+{"instruction": "is it in northern california?", "input": "", "output": "no. it's in southern california."}
+{"human": "about what?", "assistant": "about finding a job for me."}
+{"human": "that's a great idea.", "assistant": "we haven't been in a while."}
+{"human": "i bought some stock.", "assistant": "everybody buys stock."}
+{"instruction": "teaching is the best part of my whole day.", "input": "", "output": "you're a lucky man to have a job you love."}
+{"human": "yes, i like that one, too.", "assistant": "i'll call him blacky."}
+{"instruction": "every nation should have a pretty woman on their flag.", "input": "", "output": "you can't go to war carrying a flag with a woman on it!"}
+{"instruction": "i didn't do anything.", "input": "", "output": "oh yes, you did."}
+{"human": "well, it won't last forever.", "assistant": "no, i figure i'll finish it all by next week."}
+{"human": "this hot bread is delicious.", "assistant": "i like this restaurant because they give you free bread."}
+{"instruction": "i read a lot.", "input": "", "output": "i thought drunks caused most accidents."}
+{"instruction": "that must be nice.", "input": "", "output": "teaching is the best part of my whole day."}
+{"instruction": "did you go to school today?", "input": "", "output": "of course. did you?"}
+{"instruction": "he made promises that he didn't keep.", "input": "", "output": "like what?"}
+{"human": "that sounds like fun. what's the weather going to be like?", "assistant": "i heard that it's going to be warm this weekend."}
+{"human": "what if i don't like her?", "assistant": "then you don't date her again."}
+{"instruction": "i understand, i guess.", "input": "", "output": "sorry about that."}
+{"instruction": "it sure is.", "input": "", "output": "i thought school was hard."}
+{"human": "me too.", "assistant": "where does cheese come from?"}
+{"instruction": "ha! you can't win if you do play.", "input": "", "output": "someone has to win."}
+{"instruction": "but in may it will be 44 cents.", "input": "", "output": "have you ever lost a letter in the mail?"}
+{"human": "but a lot of old people are still interested in dating.", "assistant": "they should find a nice hobby."}
+{"human": "i need to type to make money.", "assistant": "but typing is causing you pain."}
+{"human": "what about that new game show?", "assistant": "which one?"}
+{"human": "yes, and i hope that it does.", "assistant": "why is that?"}
+{"human": "that's not what i meant by \"do something.\"", "assistant": "will you do something? leave me alone."}
+{"human": "that's exactly how i felt.", "assistant": "i got the movie when it came out on dvd, do you want to come over?"}
+{"human": "no, my hard drive is easy to remove and replace.", "assistant": "really?"}
+{"human": "i was laughing through the whole movie.", "assistant": "i couldn't help laughing, either. "}
+{"instruction": "yes, a thrift shop has that same smell.", "input": "", "output": "yes, an old smell."}
+{"human": "poodles bark a lot.", "assistant": "they sure do."}
+{"instruction": "that's great.", "input": "", "output": "yes, except this dent will cost about $150."}
+{"instruction": "girls like guys with money.", "input": "", "output": "they sure do."}
+{"human": "it's my mom's dog.", "assistant": "so she likes poodles."}
+{"instruction": "well, it's an hour to get there, if there are no traffic problems.", "input": "", "output": "so maybe we better leave at 8:15?"}
+{"instruction": "i'm a good card player.", "input": "", "output": "why is that?"}
+{"instruction": "why did you get a poodle?", "input": "", "output": "it's my mom's dog."}
+{"human": "tiger is the greatest golfer in the world.", "assistant": "you can say that again."}
+{"instruction": "why is that?", "input": "", "output": "because i love the snow."}
+{"human": "our team played hard and won.", "assistant": "i really wish i went to the game."}
+{"instruction": "i haven't decided yet.", "input": "", "output": "more and more people are using macs."}
+{"human": "what do you mean?", "assistant": "while you're using the bathroom, i'll order some food."}
+{"human": "only 4,000 american soldiers were killed overseas.", "assistant": "not to mention 40,000 wounded soldiers."}
+{"human": "it's too bad that i couldn't make it. who won?", "assistant": "our team played hard and won."}
+{"human": "i figured that.", "assistant": "it's not too bitter for you?"}
+{"human": "the mayor won by only 2,000 votes.", "assistant": "we're stuck with him for four more years."}
+{"human": "wow! that's terrible.", "assistant": "yes, it was."}
+{"instruction": "i buy it at the dollar store.", "input": "", "output": "how much is it?"}
+{"human": "let's play cards.", "assistant": "i don't know any card games."}
+{"instruction": "they make a lot of noise, but they don't give a close shave.", "input": "", "output": "maybe you should stop shaving."}
+{"human": "that would be nice, thank you.", "assistant": "no problem, you're welcome."}
+{"instruction": "i watched it once. that was enough.", "input": "", "output": "it's on right now. let's watch it together."}
+{"human": "i have no idea.", "assistant": "a button is hard to find. did you look in your pant cuffs?"}
+{"instruction": "that driver is crazy.", "input": "", "output": "i can't believe he hasn't crashed."}
+{"instruction": "i'd rather not.", "input": "", "output": "it gets worse every year."}
+{"human": "i was thinking about seeing a movie.", "assistant": "okay, let's go see a movie."}
+{"instruction": "of course they talk to each other.", "input": "", "output": "what do they talk about?"}
+{"instruction": "but the tv ads say that our taxes will not increase.", "input": "", "output": "do you believe the tv ads?"}
+{"human": "a coffin costs too much and takes up too much space.", "assistant": "yes, but it will be in a cemetery where your children can visit you."}
+{"human": "i had to blow my nose.", "assistant": "did you have to blow right next to the phone?"}
+{"instruction": "to thank him and all the other soldiers who served in world war ii.", "input": "", "output": "that's very nice."}
+{"instruction": "do you think i'm getting fat?", "input": "", "output": "i didn't say that."}
+{"instruction": "shake it a couple of times.", "input": "", "output": "i shook it. there is no more ink."}
+{"instruction": "i didn't realize that.", "input": "", "output": "you didn't?"}
+{"human": "would you like to go to dinner or something?", "assistant": "yeah, let's do that."}
+{"instruction": "no pets, no smoking.", "input": "", "output": "i like that. let's stay three nights."}
+{"human": "which would you prefer?", "assistant": "what do you mean?"}
+{"instruction": "a good story is more important than color.", "input": "", "output": "actors didn't curse back then."}
+{"human": "yes, but i talk to him almost every day.", "assistant": "when you go to church?"}
+{"instruction": "he might say i'm okay.", "input": "", "output": "he might say you have bone cancer."}
+{"human": "oh, i don't care. you're the one who wants to go out.", "assistant": "well, i want to see \"the pursuit of happyness.\""}
+{"human": "well, listen to it more quietly.", "assistant": "i can't wait till i grow up."}
+{"human": "some guy rowed across the atlantic ocean.", "assistant": "good for him."}
+{"instruction": "did he sign it?", "input": "", "output": "yes."}
+{"instruction": "i really like this house.", "input": "", "output": "can we afford it?"}
+{"instruction": "that's what i need to do.", "input": "", "output": "he'll give you a prescription for glasses."}
+{"human": "it's okay.", "assistant": "so what were you calling me about?"}
+{"human": "and i want to get a big cabin with a view.", "assistant": "are you going to travel alone?"}
+{"human": "they're all asking the same question.", "assistant": "when are they going to fix this problem?"}
+{"human": "i've been missing you like crazy.", "assistant": "i don't understand why you haven't come to visit me."}
+{"instruction": "you know how to draw and paint?", "input": "", "output": "yes, i do."}
+{"instruction": "in case we have visitors.", "input": "", "output": "but they can just knock on the door."}
+{"instruction": "when he licks his lips, you know he has a good hand?", "input": "", "output": "i know he has a good hand, so i don't bet."}
+{"human": "yes, but a puppy needs shots.", "assistant": "shots for what?"}
+{"instruction": "where's the mustard?", "input": "", "output": "it's in the fridge, i think."}
+{"human": "i type too much.", "assistant": "you should take a break."}
+{"instruction": "yeah, i went. did you go?", "input": "", "output": "no, i didn't feel like it."}
+{"instruction": "they were about forty dollars.", "input": "", "output": "i think i'm going to go buy myself a pair."}
+{"human": "i would really appreciate that, thanks.", "assistant": "it's no trouble at all."}
+{"instruction": "no, when i call him on his cell phone.", "input": "", "output": "what do you mean?"}
+{"instruction": "well, it gives me money, but it's my own money.", "input": "", "output": "oh. what good is that? i thought it gave you free money."}
+{"human": "well, more than 50 million people voted for mccain.", "assistant": "that's 50 million people who don't love obama."}
+{"human": "that's too bad. what about his smoke alarm?", "assistant": "the battery was dead."}
+{"instruction": "i don't know. look in the fridge.", "input": "", "output": "i think i'll make a sandwich."}
+{"instruction": "they should look good, too.", "input": "", "output": "there are lots of ugly men singers."}
+{"instruction": "good afternoon, officer.", "input": "", "output": "your driver's license and registration, please."}
+{"human": "they said i need a new hard drive.", "assistant": "that's too bad. how much is a new one?"}
+{"human": "especially if it's the same work, over and over.", "assistant": "but that's what most people do."}
+{"human": "she told him to drop his girlfriend.", "assistant": "what did your father do?"}
+{"human": "did you hear that?", "assistant": "of course i heard that. i thought a plane had crashed into your house."}
+{"instruction": "what's your favorite thing to do?", "input": "", "output": "i like to watch people."}
+{"instruction": "same here.", "input": "", "output": "i bought the movie. would you like to come to my house and watch it?"}
+{"instruction": "i bought three pounds of potatoes for a dollar.", "input": "", "output": "that's a good deal."}
+{"human": "they never shut up.", "assistant": "why did you get a poodle?"}
+{"human": "she asked me how she could return the favor, so i asked her out.", "assistant": "sometimes a slow line can be a good thing."}
+{"instruction": "i haven't told you what happened yet, have i?", "input": "", "output": "i haven't heard anything."}
+{"instruction": "ha! we're not funny-looking", "input": "", "output": " animals are funny-looking."}
+{"human": "you don't have the money?", "assistant": "i have no insurance."}
+{"human": "the forecast says that it will be warm on the weekend.", "assistant": "so do you think it'll be perfect weather for the beach?"}
+{"human": "they go in one ear and out the other.", "assistant": "who makes up all these jokes?"}
+{"instruction": "tell me how she looks.", "input": "", "output": "she's kind of short."}
+{"instruction": "do you believe everything you hear?", "input": "", "output": "i don't believe anything i don't see with my own eyes."}
+{"instruction": "i hope they fit.", "input": "", "output": "i hope you kept the receipt."}
+{"human": "i hope they are fast minutes.", "assistant": "think about something else. think about a hamburger."}
+{"instruction": "what was the score at the end of the game?", "input": "", "output": "our team won 101-98."}
+{"instruction": "what do you mean?", "input": "", "output": "i mean, someone used their dirty hands to pick the bananas, the apples, and the oranges."}
+{"human": "winter is great. i wish it didn't get so cold sometimes though.", "assistant": "i would rather deal with the winter than the summer."}
+{"human": "do pimples run in your family?", "assistant": "not that i've noticed."}
+{"instruction": "you think so, how come?", "input": "", "output": "well, superbad is super funny."}
+{"human": "why not?", "assistant": "i really can't stand going to parties."}
+{"instruction": "okay. i'll tell you how the show ends.", "input": "", "output": "zzz."}
+{"instruction": "no, i don't need a converter because i bought a digital tv.", "input": "", "output": "how much was that?"}
+{"human": "get one with the rubber suction cups on the bottom.", "assistant": "yes. that way it will stay where i put it."}
+{"instruction": "he might want to cut you open.", "input": "", "output": "he might say i'm okay."}
+{"human": "then it will look like new", "assistant": "and you save $10."}
+{"human": "what's wrong with looking pale?", "assistant": "people think you might be sick."}
+{"instruction": "it's not comfortable.", "input": "", "output": "it seems fine to me."}
+{"human": "it must be very lonely.", "assistant": "why's that?"}
+{"human": "i sure hope not.", "assistant": "maybe they towed it away."}
+{"human": "this sunday?", "assistant": "of course. it's all over the news."}
+{"human": "sorry about that. i was cleaning up.", "assistant": "it's okay."}
+{"instruction": "what does she do?", "input": "", "output": "just yesterday, i told her i wouldn't trade her for all the money in the world."}
+{"human": "we went to a nice restaurant.", "assistant": "anywhere else?"}
+{"instruction": "but we need to turn left.", "input": "", "output": "forget it. go straight."}
+{"human": "it's the force that pulls everything down.", "assistant": "i don't understand."}
+{"instruction": "you're very lucky.", "input": "", "output": "why do you say that?"}
+{"human": "that's what i do.", "assistant": "my friend stayed in a hotel on friday the thirteenth."}
+{"instruction": "no, they smell like a thrift shop.", "input": "", "output": "yes, a thrift shop has that same smell."}
+{"instruction": "hey, did you hear about jessica's party this weekend?", "input": "", "output": "yeah, but i'm still waiting for my invitation."}
+{"human": "yes. all my life.", "assistant": "you're wearing out your right hand. stop using it so much."}
+{"human": "i know, you should really go and see her and the baby.", "assistant": "of course i will."}
+{"instruction": "how good is your math?", "input": "", "output": "i can add two and two."}
+{"human": "you can see the stars so much more clearly after it rains.", "assistant": "i would love for it to rain today."}
+{"instruction": "i enjoy listening to all kinds of music.", "input": "", "output": "what kind?"}
+{"instruction": "i don't know. the tag is missing.", "input": "", "output": "ask the clerk."}
+{"instruction": "what do they talk about?", "input": "", "output": "they talk about other animals."}
+{"human": "yeah, let's do that.", "assistant": "okay, until next time then."}
+{"human": "they don't believe us?", "assistant": "no. they can only give a ticket if they see it happen."}
+{"human": "i know, you're absolutely right.", "assistant": "i wish it would cool off one day."}
+{"human": "how many are there?", "assistant": "eight."}
+{"instruction": "i toss and turn all night.", "input": "", "output": "you should stop drinking coffee."}
+{"instruction": "it has great weather all year long.", "input": "", "output": "it has the rose parade."}
+{"instruction": "you're right. a car is faster.", "input": "", "output": "number two, it's usually late."}
+{"instruction": "is there anything you would like to do next time?", "input": "", "output": "do you want to go out to eat?"}
+{"human": "what was the reason for your call?", "assistant": "i want to do something tomorrow with you."}
+{"human": "what time?", "assistant": "it starts at 8 o'clock."}
+{"instruction": "yes, because you can be too sensitive to odors.", "input": "", "output": "i'll say. my girlfriend has a nose like a drug dog."}
+{"human": "then why aren't i having fun?", "assistant": "because you're thinking too much."}
+{"instruction": "what kind of car do you have?", "input": "", "output": "i have a honda."}
+{"human": "where are we going?", "assistant": "into the mountains."}
+{"instruction": "a travel show follows another travel show.", "input": "", "output": "i'll say! i've gone around the world a dozen times already!"}
+{"human": "i'm going to the movie theater with my friend. what are you going to do?", "assistant": "i'm not quite sure yet."}
+{"instruction": "i'm not interested in her.", "input": "", "output": "then why were you looking at her?"}
+{"human": "it says the mayor spends only 11 percent of his time on city duties.", "assistant": "only 11 percent?"}
+{"human": "what does she look like, though?", "assistant": "she has pretty light brown eyes."}
+{"human": "what article?", "assistant": "it says the mayor spends only 11 percent of his time on city duties."}
+{"instruction": "then i have a job for you in my kitchen.", "input": "", "output": "it will cost you only $20 plus parts."}
+{"human": "because food and other stuff sticks in my beard.", "assistant": "hmm. here's an idea. put cream on your face and have the cat lick it off."}
+{"human": "there is no crime here.", "assistant": "i wish i could move here."}
+{"human": "you haven't told me anything yet.", "assistant": "i got a promotion at work earlier this week."}
+{"instruction": "the streets and sidewalks are clean.", "input": "", "output": "yes, they are."}
+{"instruction": "to show respect to god and others.", "input": "", "output": "i'm glad sunday is only once a week."}
+{"instruction": "please?", "input": "", "output": "you know the rules."}
+{"human": "don't mention it.", "assistant": "when you miss a day of school, i'll be happy to give you the english assignments."}
+{"human": "no, the banana was delicious.", "assistant": "maybe you just need to go to the bathroom."}
+{"human": "i didn't even have lunch.", "assistant": "neither did i."}
+{"instruction": "you need to get a lot of lessons when you're really young.", "input": "", "output": "forget it. golf sounds more like work than fun."}
+{"instruction": "it's close to the mountains.", "input": "", "output": "the people are friendly."}
+{"instruction": "like what?", "input": "", "output": "i think he closed the bowling alley in the white house."}
+{"instruction": "you know the rules.", "input": "", "output": "i hate the rules! i can't wait till i grow up."}
+{"instruction": "but the house is so nice.", "input": "", "output": "it's in a great neighborhood."}
+{"instruction": "do you want to go out to eat?", "input": "", "output": "i'd like that."}
+{"human": "anyway, i have to fix the hole.", "assistant": "you can sew it up or use an iron-on patch."}
+{"instruction": "you should loosen your belt.", "input": "", "output": "i already loosened my belt and unbuttoned my pants."}
+{"instruction": "i had a long day.", "input": "", "output": "so did i."}
+{"instruction": "only 4,000 american soldiers were killed overseas.", "input": "", "output": "not to mention 40,000 wounded soldiers."}
+{"instruction": "i got ripped off.", "input": "", "output": "what happened?"}
+{"human": "oh, no. our ashes will be shaken into the ocean.", "assistant": "you're not going to be buried?"}
+{"human": "maybe he's just a liar.", "assistant": "maybe i'll vote for someone else, too."}
+{"instruction": "what's wrong with looking pale?", "input": "", "output": "people think you might be sick."}
+{"human": "but the smell is different.", "assistant": "yes, old people don't smell like fruit."}
+{"human": "he shouldn't scuba dive until he retires.", "assistant": "but he dives to relax."}
+{"human": "i think i know the difference between picking and scratching.", "assistant": "okay, mom, maybe i was picking it a little bit."}
+{"human": "how much is it?", "assistant": "i don't know. the tag is missing."}
+{"human": "there are other things i need to take care of.", "assistant": "what is it that you need to do? "}
+{"human": "i really like that outfit.", "assistant": "thanks. i think you look nice today, too."}
+{"human": "it's always nice to finish a job.", "assistant": "well, it's good and bad."}
+{"human": "i'm doing well. how about you?", "assistant": "never better, thanks."}
+{"human": "yes, and i sealed the envelope.", "assistant": "did you put a stamp on the envelope?"}
+{"instruction": "i'll bet the car continued on its way.", "input": "", "output": "of course it did. why stop after you've run over two people?"}
+{"instruction": "what was the reason for your call?", "input": "", "output": "i want to do something tomorrow with you."}
+{"instruction": "no, we have a big dictionary in the classroom.", "input": "", "output": "well, i guess that's it."}
+{"human": "okay, until next time then.", "assistant": "i'll call you so we can set that up."}
+{"instruction": "do you eat fruits and vegetables every day?", "input": "", "output": "no, i hate vegetables."}
+{"human": "because they always do.", "assistant": "maybe she's different."}
+{"instruction": "maybe in your next life you'll have blue eyes.", "input": "", "output": "but what if i'm a fish in my next life?"}
