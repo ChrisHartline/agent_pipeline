@@ -20,5 +20,5 @@ BASE_MODEL_PATH = f"gs://{MODELS_BUCKET}/models"
 
 # Machine specs for Vertex AI (CPU only - no GPU quota yet)
 MACHINE_TYPE = "n1-standard-8"
-ACCELERATOR_TYPE = None  # Set to "NVIDIA_TESLA_T4" when quota approved
+ACCELERATOR_TYPE = "NVIDIA_TESLA_T4"
 ACCELERATOR_COUNT = 0
