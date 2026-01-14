@@ -82,6 +82,11 @@ def main():
         logger.info("Install with: pip install torch transformers peft datasets accelerate")
         sys.exit(1)
 
+    # Check if GPU is available for bf16
+    import torch
+    use_bf16 = torch.cuda.is_available()
+    logger.info(f"CUDA available: {torch.cuda.is_available()}, using bf16: {use_bf16}")
+
     # Create configuration
     config = lora_training_config(
         base_model="TinyLlama/TinyLlama-1.1B-Chat-v1.0",
@@ -93,7 +98,7 @@ def main():
         epochs=args.epochs,
         per_device_train_batch_size=args.batch_size,
         max_seq_length=args.max_length,
-        bf16=True,  # TinyLlama works well with bf16
+        bf16=use_bf16,  # Only use bf16 if GPU available
         wandb_project=args.wandb_project,
         smoke_test=args.smoke,
     )
