@@ -14,7 +14,9 @@ TRAINING_IMAGE = f"{ARTIFACT_REGISTRY}/clara-train:latest"
 SERVING_IMAGE = f"{ARTIFACT_REGISTRY}/clara-serve:latest"
 
 # Default paths
-TRAINING_DATA_PATH = "gs://training_datasets_ai/casual_conv_DP0/casual-conversation-poo.json"
+# NOTE: Data must be in SFT format (instruction/input/output), not DPO format (prompt/chosen/rejected)
+# Upload SFT data first: gsutil cp data/sft/casual_conversation_sft.jsonl gs://training_datasets_ai/sft/
+TRAINING_DATA_PATH = "gs://training_datasets_ai/sft/casual_conversation_sft.jsonl"
 MODEL_OUTPUT_PATH = f"gs://{MODELS_BUCKET}/output"
 BASE_MODEL_PATH = f"gs://{MODELS_BUCKET}/models"
 
