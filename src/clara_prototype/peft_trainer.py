@@ -497,6 +497,8 @@ class PeftTrainer:
                 seed=self.config.seed,
                 report_to="wandb" if self.config.wandb_project else "none",
                 push_to_hub=False,
+                # Keep raw columns so DataCollatorSFT can tokenize them
+                remove_unused_columns=False,
             )
 
             # Get train dataset
