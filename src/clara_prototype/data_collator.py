@@ -23,6 +23,7 @@ class DataCollatorSFT:
 
         Accepts examples in one of the forms:
         - {'human': str, 'assistant': str}
+        - {'instruction': str, 'input': str, 'output': str}
         - {'text': 'Human: ...\nAssistant: ...'}
         """
         self._ensure_pad_token()
@@ -30,10 +31,17 @@ class DataCollatorSFT:
         inputs = []
         labels_list = []
         for ex in features:
-            if "human" in ex and "assistant" in ex:
+            # Check values, not just keys (HF adds None for missing columns)
+            if ex.get("human") and ex.get("assistant"):
                 human = ex["human"]
                 assistant = ex["assistant"]
-            elif "text" in ex:
+            elif ex.get("instruction") is not None and ex.get("output"):
+                # Alpaca/instruction format
+                human = ex["instruction"]
+                if ex.get("input"):
+                    human = f"{human}\n{ex['input']}"
+                assistant = ex["output"]
+            elif ex.get("text"):
                 # split at the assistant marker
                 parts = ex["text"].split("\nAssistant:")
                 if len(parts) == 2:
@@ -44,7 +52,10 @@ class DataCollatorSFT:
                     human = ""
                     assistant = ex["text"]
             else:
-                raise ValueError("Feature must contain 'human' and 'assistant' or 'text'")
+                raise ValueError(
+                    f"Feature must contain 'human'/'assistant', 'instruction'/'output', or 'text'. "
+                    f"Got keys: {list(ex.keys())}"
+                )
 
             # Build using encode separately to ensure EOS placement
             prefix_ids = self.tokenizer.encode(f"Human: {human}\nAssistant: ", add_special_tokens=False)
