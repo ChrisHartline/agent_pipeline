@@ -9,6 +9,12 @@ Usage:
 import argparse
 from datetime import datetime
 
+import sys
+from pathlib import Path
+
+# Ensure we import from gcp_pipeline/config.py, not root config.py
+sys.path.insert(0, str(Path(__file__).parent))
+
 from config import (
     PROJECT_ID,
     REGION,
