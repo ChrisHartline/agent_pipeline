@@ -93,7 +93,8 @@ class SupabaseStore(MemoryStore):
             )
 
         self.url = url or os.environ.get("SUPABASE_URL")
-        self.key = key or os.environ.get("SUPABASE_KEY")
+        # Check for service_role key first (more permissions), then fall back to anon key
+        self.key = key or os.environ.get("SUPABASE_SERVICEROLE_KEY") or os.environ.get("SUPABASE_KEY")
 
         if not self.url or not self.key:
             raise ValueError(
