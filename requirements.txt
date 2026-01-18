@@ -22,3 +22,8 @@ mergekit
 wandb
 jupyterlab
 jupytext
+
+# Memory system dependencies
+cryptography>=41.0.0
+supabase>=2.0.0
+falkordb>=1.0.0
