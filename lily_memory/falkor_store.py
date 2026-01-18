@@ -8,8 +8,10 @@ Uses client-side encryption for sensitive entity data.
 
 Required environment variables:
     FALKORDB_HOST: FalkorDB host (or use FALKORDB_URL for cloud)
-    FALKORDB_PORT: FalkorDB port (default: 6379)
-    FALKORDB_HOSTED_KEY: API key for FalkorDB Cloud
+    FALKORDB_PORT: FalkorDB port (default: 6379, cloud typically uses different port)
+    FALKORDB_USER: Username (default: 'default', cloud may use 'falkordb')
+    FALKORDB_HOSTED_KEY: Password/API key for FalkorDB Cloud
+    FALKORDB_SSL: Set to 'true' for cloud connections (default: true for non-localhost)
     CLARA_MEMORY_KEY: Base64-encoded encryption key for client-side encryption
 """
 
@@ -49,7 +51,9 @@ class FalkorStore(MemoryStore):
         self,
         host: Optional[str] = None,
         port: Optional[int] = None,
+        username: Optional[str] = None,
         password: Optional[str] = None,
+        ssl: Optional[bool] = None,
         graph_name: str = "clara_memory",
         encryption: Optional[MemoryEncryption] = None
     ):
@@ -57,9 +61,11 @@ class FalkorStore(MemoryStore):
         Initialize FalkorDB connection.
 
         Args:
-            host: FalkorDB host (or FALKOR_HOST env var)
-            port: FalkorDB port (or FALKOR_PORT env var)
-            password: FalkorDB password (or FALKOR_PASSWORD env var)
+            host: FalkorDB host (or FALKORDB_HOST env var)
+            port: FalkorDB port (or FALKORDB_PORT env var)
+            username: FalkorDB username (or FALKORDB_USER env var, default: 'default')
+            password: FalkorDB password (or FALKORDB_HOSTED_KEY env var)
+            ssl: Enable SSL/TLS (or FALKORDB_SSL env var, default: True for cloud)
             graph_name: Name of the graph to use
             encryption: Encryption instance for sensitive data
         """
@@ -70,13 +76,29 @@ class FalkorStore(MemoryStore):
 
         self.host = host or os.environ.get("FALKORDB_HOST", "localhost")
         self.port = port or int(os.environ.get("FALKORDB_PORT", "6379"))
+        self.username = username or os.environ.get("FALKORDB_USER", "default")
         self.password = password or os.environ.get("FALKORDB_HOSTED_KEY")
+
+        # Auto-enable SSL for non-localhost (cloud) connections
+        if ssl is not None:
+            self.ssl = ssl
+        else:
+            ssl_env = os.environ.get("FALKORDB_SSL", "").lower()
+            if ssl_env in ("true", "1", "yes"):
+                self.ssl = True
+            elif ssl_env in ("false", "0", "no"):
+                self.ssl = False
+            else:
+                # Auto-detect: enable SSL for cloud hosts
+                self.ssl = self.host != "localhost" and not self.host.startswith("127.")
 
         # Connect to FalkorDB
         self.db = FalkorDB(
             host=self.host,
             port=self.port,
-            password=self.password
+            username=self.username,
+            password=self.password,
+            ssl=self.ssl
         )
         self.graph = self.db.select_graph(graph_name)
         self.encryption = encryption or get_encryption()
