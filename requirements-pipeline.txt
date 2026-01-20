@@ -1,0 +1,2 @@
+# Minimal dependencies for data pipeline Cloud Run Job
+google-cloud-storage>=2.12.0
