@@ -205,29 +205,20 @@ def test_falkordb():
 
     # Set global socket timeout as fallback
     import socket
-    socket.setdefaulttimeout(15)
+    socket.setdefaulttimeout(30)
 
     try:
-        # For cloud connections, use URL-based connection with falkors:// (SSL)
-        if use_ssl and password:
-            # URL format: falkors://username:password@host:port
-            # falkors:// is converted to rediss:// internally for SSL
-            from urllib.parse import quote_plus
-            encoded_password = quote_plus(password)
-            url = f"falkors://{username}:{encoded_password}@{host}:{port}"
-            print(f"  Using URL connection: falkors://{username}:***@{host}:{port}")
-            # Pass socket_timeout through kwargs
-            db = FalkorDB.from_url(url, socket_timeout=10, socket_connect_timeout=10)
-        else:
-            # Fallback to parameter-based connection for local/non-SSL
-            db = FalkorDB(
-                host=host,
-                port=int(port),
-                username=username,
-                password=password,
-                ssl=use_ssl,
-                socket_timeout=10
-            )
+        # Match the working connection pattern from FalkorMemoryStore
+        connect_args = {"host": host, "port": int(port)}
+        if username and str(username).strip():
+            connect_args["username"] = username
+        if password and str(password).strip():
+            connect_args["password"] = password
+        if use_ssl:
+            connect_args["ssl"] = True
+
+        print(f"  Connection args: host={host}, port={port}, user={username}, ssl={use_ssl}")
+        db = FalkorDB(**connect_args)
         print("[OK] Connection established")
 
         # Test graph operations
