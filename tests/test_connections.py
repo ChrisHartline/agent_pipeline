@@ -204,27 +204,25 @@ def test_falkordb():
         return False
 
     try:
-        # For cloud connections, we need proper SSL context
-        import ssl
-        ssl_context = None
-        if use_ssl:
-            ssl_context = ssl.create_default_context()
-            ssl_context.check_hostname = False
-            ssl_context.verify_mode = ssl.CERT_NONE  # FalkorDB Cloud may use self-signed certs
-            print("  Using SSL with relaxed certificate verification")
-
-        db = FalkorDB(
-            host=host,
-            port=int(port),
-            username=username,
-            password=password,
-            ssl=use_ssl,
-            ssl_certfile=None,
-            ssl_keyfile=None,
-            ssl_ca_certs=None,
-            socket_timeout=10,
-            socket_connect_timeout=10
-        )
+        # For cloud connections, use URL-based connection with falkors:// (SSL)
+        if use_ssl and password:
+            # URL format: falkors://username:password@host:port
+            # falkors:// is converted to rediss:// internally for SSL
+            from urllib.parse import quote_plus
+            encoded_password = quote_plus(password)
+            url = f"falkors://{username}:{encoded_password}@{host}:{port}"
+            print(f"  Using URL connection: falkors://{username}:***@{host}:{port}")
+            db = FalkorDB.from_url(url)
+        else:
+            # Fallback to parameter-based connection for local/non-SSL
+            db = FalkorDB(
+                host=host,
+                port=int(port),
+                username=username,
+                password=password,
+                ssl=use_ssl,
+                socket_timeout=10
+            )
         print("[OK] Connection established")
 
         # Test graph operations
