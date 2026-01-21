@@ -100,7 +100,8 @@ def test_supabase():
 
         # Test insert
         print("\nTesting write access...")
-        test_id = f"test-{datetime.now().strftime('%Y%m%d%H%M%S')}"
+        import uuid
+        test_id = str(uuid.uuid4())  # Use proper UUID format
         test_data = {
             "id": test_id,
             "user_id": "connection-test",
@@ -203,13 +204,26 @@ def test_falkordb():
         return False
 
     try:
+        # For cloud connections, we need proper SSL context
+        import ssl
+        ssl_context = None
+        if use_ssl:
+            ssl_context = ssl.create_default_context()
+            ssl_context.check_hostname = False
+            ssl_context.verify_mode = ssl.CERT_NONE  # FalkorDB Cloud may use self-signed certs
+            print("  Using SSL with relaxed certificate verification")
+
         db = FalkorDB(
             host=host,
             port=int(port),
             username=username,
             password=password,
             ssl=use_ssl,
-            socket_timeout=10
+            ssl_certfile=None,
+            ssl_keyfile=None,
+            ssl_ca_certs=None,
+            socket_timeout=10,
+            socket_connect_timeout=10
         )
         print("[OK] Connection established")
 
