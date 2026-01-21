@@ -179,15 +179,37 @@ def test_falkordb():
         print("  Install with: pip install falkordb")
         return False
 
-    # Test connection
+    # Test connection with timeout
     print(f"\nConnecting to FalkorDB at {host}:{port}...")
+    print("  (timeout: 10 seconds)")
+
+    # First check if we can reach the host at all
+    import socket
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    sock.settimeout(10)
+    try:
+        sock.connect((host, int(port)))
+        sock.close()
+        print("[OK] Host reachable")
+    except socket.timeout:
+        print("\n[ERROR] Connection timed out")
+        print("  The host is not responding. Check:")
+        print("  - FALKORDB_HOST and FALKORDB_PORT are correct")
+        print("  - Your firewall allows outbound connections to this port")
+        print("  - The FalkorDB instance is running")
+        return False
+    except socket.error as e:
+        print(f"\n[ERROR] Cannot reach host: {e}")
+        return False
+
     try:
         db = FalkorDB(
             host=host,
             port=int(port),
             username=username,
             password=password,
-            ssl=use_ssl
+            ssl=use_ssl,
+            socket_timeout=10
         )
         print("[OK] Connection established")
 
