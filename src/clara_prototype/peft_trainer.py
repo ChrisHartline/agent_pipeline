@@ -124,14 +124,39 @@ class PeftTrainer:
         # Prefer using SFT collator which builds labels that mask human prompt tokens.
         data_collator = self._build_data_collator(tokenizer)
 
+        # Auto-detect bf16 support and fallback to fp16 if not available
+        use_bf16 = self.bf16
+        use_fp16 = self.fp16
+        
+        if use_bf16:
+            try:
+                import torch
+                if torch.cuda.is_available():
+                    # Check if GPU supports bfloat16
+                    gpu_name = torch.cuda.get_device_name(0)
+                    compute_capability = torch.cuda.get_device_capability(0)
+                    # bf16 requires compute capability >= 8.0 (Ampere and newer)
+                    if compute_capability[0] < 8:
+                        print(f"WARNING: GPU {gpu_name} (compute {compute_capability[0]}.{compute_capability[1]}) doesn't support bf16. Falling back to fp16.")
+                        use_bf16 = False
+                        use_fp16 = True
+                else:
+                    print("WARNING: CUDA not available. Disabling bf16 and fp16.")
+                    use_bf16 = False
+                    use_fp16 = False
+            except Exception as e:
+                print(f"WARNING: Could not detect bf16 support: {e}. Falling back to fp16.")
+                use_bf16 = False
+                use_fp16 = True
+
         training_args = TrainingArguments(
             output_dir=self.out_dir,
             per_device_train_batch_size=self.per_device_batch_size,
             gradient_accumulation_steps=self.accumulate_grad,
             num_train_epochs=self.epochs,
             learning_rate=self.lr,
-            fp16=self.fp16,
-            bf16=self.bf16,
+            fp16=use_fp16,
+            bf16=use_bf16,
             save_strategy="steps",
             save_steps=200,
             logging_steps=50,
