@@ -5,23 +5,43 @@ Test script for Supabase and FalkorDB connections.
 Usage:
     python tests/test_connections.py
 
-Environment variables:
-    SUPABASE_URL: Your Supabase project URL
-    SUPABASE_KEY or SUPABASE_SERVICEROLE_KEY: Supabase API key
-
-    FALKORDB_HOST: FalkorDB host
-    FALKORDB_PORT: FalkorDB port (default: 6379)
-    FALKORDB_USER: FalkorDB username (default: falkordb for cloud)
-    FALKORDB_HOSTED_KEY: FalkorDB password
-    FALKORDB_SSL: Set to 'true' for cloud (auto-detected)
+Automatically loads .env from lily_memory/.env if present.
 """
 
 import os
 import sys
 from datetime import datetime
+from pathlib import Path
 
 # Add parent to path for imports
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+project_root = Path(__file__).parent.parent
+sys.path.insert(0, str(project_root))
+
+# Auto-load .env file
+def load_env():
+    """Load .env file from lily_memory/.env"""
+    env_paths = [
+        project_root / "lily_memory" / ".env",
+        project_root / ".env",
+    ]
+
+    for env_path in env_paths:
+        if env_path.exists():
+            print(f"Loading environment from: {env_path}")
+            with open(env_path, 'r') as f:
+                for line in f:
+                    line = line.strip()
+                    if line and not line.startswith('#') and '=' in line:
+                        key, _, value = line.partition('=')
+                        key = key.strip()
+                        value = value.strip().strip('"').strip("'")
+                        if key and value:
+                            os.environ[key] = value
+            return True
+    return False
+
+# Load .env before anything else
+load_env()
 
 
 def print_header(title: str):
