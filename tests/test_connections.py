@@ -203,6 +203,10 @@ def test_falkordb():
         print(f"\n[ERROR] Cannot reach host: {e}")
         return False
 
+    # Set global socket timeout as fallback
+    import socket
+    socket.setdefaulttimeout(15)
+
     try:
         # For cloud connections, use URL-based connection with falkors:// (SSL)
         if use_ssl and password:
@@ -212,7 +216,8 @@ def test_falkordb():
             encoded_password = quote_plus(password)
             url = f"falkors://{username}:{encoded_password}@{host}:{port}"
             print(f"  Using URL connection: falkors://{username}:***@{host}:{port}")
-            db = FalkorDB.from_url(url)
+            # Pass socket_timeout through kwargs
+            db = FalkorDB.from_url(url, socket_timeout=10, socket_connect_timeout=10)
         else:
             # Fallback to parameter-based connection for local/non-SSL
             db = FalkorDB(
