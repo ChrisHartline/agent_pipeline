@@ -17,6 +17,7 @@ class ModelFamily(Enum):
     PHI = "phi"
     TINYLLAMA = "tinyllama"
     QWEN = "qwen"
+    LIQUID = "liquid"  # LiquidAI LFM models
 
 
 @dataclass
@@ -94,6 +95,27 @@ SUPPORTED_MODELS: Dict[str, ModelConfig] = {
         recommended_lora_r=16,
         recommended_batch_size=4,
     ),
+    # LiquidAI models (tentative - verify licensing)
+    "lfm-1.2b-base": ModelConfig(
+        name="LFM 2.5 1.2B Base",
+        hf_id="LiquidAI/LFM2.5-1.2B-Base",
+        family=ModelFamily.LIQUID,
+        max_tokens=32768,
+        chat_template="liquid",
+        description="LiquidAI base model. Best for heavy fine-tuning on custom data.",
+        recommended_lora_r=16,
+        recommended_batch_size=8,
+    ),
+    "lfm-1.2b-thinking": ModelConfig(
+        name="LFM 2.5 1.2B Thinking",
+        hf_id="LiquidAI/LFM2.5-1.2B-Thinking",
+        family=ModelFamily.LIQUID,
+        max_tokens=32768,
+        chat_template="liquid-thinking",
+        description="Reasoning model with <think> traces. Fast inference, <1GB memory.",
+        recommended_lora_r=16,
+        recommended_batch_size=8,
+    ),
 }
 
 
@@ -128,6 +150,19 @@ CHAT_TEMPLATES = {
         "user": "<|im_start|>user\n{content}<|im_end|>\n",
         "assistant": "<|im_start|>assistant\n{content}<|im_end|>\n",
         "generation_prompt": "<|im_start|>assistant\n",
+    },
+    # LiquidAI templates (may need adjustment based on actual model card)
+    "liquid": {
+        "system": "<|system|>\n{content}\n",
+        "user": "<|user|>\n{content}\n",
+        "assistant": "<|assistant|>\n{content}\n",
+        "generation_prompt": "<|assistant|>\n",
+    },
+    "liquid-thinking": {
+        "system": "<|system|>\n{content}\n",
+        "user": "<|user|>\n{content}\n",
+        "assistant": "<|assistant|>\n<think>{thinking}</think>\n{content}\n",
+        "generation_prompt": "<|assistant|>\n<think>",
     },
 }
 
