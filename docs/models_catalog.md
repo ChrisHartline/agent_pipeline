@@ -38,11 +38,16 @@ This file contains short reminders and quick notes about selected HF models (use
   - Type: 1.1B chat model.
   - Use: quick local fine-tuning, experiments, toy agents.
 
-- Phi (recommended for agent use)
-  - Suggested model: `phi-3-mini-instruct`
+- Phi-3 (recommended for agent use)
+  - Suggested models:
+    - `microsoft/Phi-3-mini-4k-instruct` (3.8B, 4K context)
+    - `microsoft/Phi-3-mini-128k-instruct` (3.8B, 128K context)
+    - `microsoft/Phi-3.5-mini-instruct` (latest, 128K context)
   - Type: Phi-3 family (mini variant recommended for agents).
+  - License: MIT
   - Use: instruction following / agent inner loop where latency and reliability matter.
-  - Notes: If you need more capability, consider `phi-3-small-instruct` or larger variants. Verify HF model slug & card.
+  - GCP: Available in Model Garden for deployment; fine-tuning requires GCS storage approach.
+  - Notes: Phi-3 models are MIT licensed. For larger capacity, consider Phi-3-small or Phi-3-medium variants.
 
 General notes
 - GGUF files are inference-only and useful for Ollama/llama.cpp workflows. Keep safetensors/PyTorch checkpoints for training and LoRA adapters.

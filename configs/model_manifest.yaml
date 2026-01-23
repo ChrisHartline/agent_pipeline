@@ -51,9 +51,27 @@ models:
     preferred_format: safetensors
     trainable: true
 
-  - name: phi3-mini-instruct
-    hf_slug: phi/phi-3-mini-instruct
+  - name: phi3-mini-4k-instruct
+    hf_slug: microsoft/Phi-3-mini-4k-instruct
     type: instruction
     preferred_format: safetensors
     trainable: true
-    notes: "Recommended Phi variant for agents (mini = low latency, good instruction-following)."
+    license: mit
+    notes: "3.8B params, 4K context. Recommended Phi variant for agents (mini = low latency, good instruction-following)."
+
+  - name: phi3-mini-128k-instruct
+    hf_slug: microsoft/Phi-3-mini-128k-instruct
+    type: instruction
+    preferred_format: safetensors
+    trainable: true
+    license: mit
+    notes: "3.8B params, 128K context. Longer context version of Phi-3-mini."
+
+  - name: phi3.5-mini-instruct
+    hf_slug: microsoft/Phi-3.5-mini-instruct
+    type: instruction
+    preferred_format: safetensors
+    trainable: true
+    license: mit
+    notes: "Updated Phi-3.5 with 128K context. Latest recommended version."
+    gcp_model_garden: "microsoft/phi3"  # Available for deployment via Model Garden
