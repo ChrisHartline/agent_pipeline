@@ -1,24 +1,50 @@
-# Dockerfile template for PEFT training image
-# Usage: build and push to Artifact Registry (gcr.us-central1-docker.pkg.dev/<PROJECT>/<REPO>/image:tag)
+# PEFT Training Image for Vertex AI
+# Includes PyTorch with CUDA support for A100/L4/T4 GPUs
+#
+# Build:
+#   docker build -f Dockerfile.peft -t gcr.io/<PROJECT>/clara-train:latest .
+#
+# Push to Artifact Registry:
+#   docker push gcr.io/<PROJECT>/clara-train:latest
 
-FROM python:3.11-slim
+# Use NVIDIA's PyTorch image with CUDA 12.1 (compatible with A100, L4, T4)
+FROM nvcr.io/nvidia/pytorch:24.01-py3
 
 ENV DEBIAN_FRONTEND=noninteractive
-
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    build-essential git curl ca-certificates && \
-    rm -rf /var/lib/apt/lists/*
+ENV PYTHONUNBUFFERED=1
 
 WORKDIR /app
 
+# Install system dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    git \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy and install Python dependencies
 COPY requirements.txt /app/requirements.txt
-RUN pip install --upgrade pip
-# NOTE: For GPU images, install the correct torch wheel BEFORE bitsandbytes
-# e.g.: pip install torch==<VER>+cu124 -f https://download.pytorch.org/whl/cu124.html
-RUN pip install -r /app/requirements.txt
 
-COPY . /app
+# Install Python packages (PyTorch already included in base image)
+RUN pip install --upgrade pip && \
+    pip install --no-cache-dir \
+    transformers>=4.40.0 \
+    datasets>=2.14.0 \
+    accelerate>=0.27.0 \
+    peft>=0.10.0 \
+    trl>=0.8.0 \
+    bitsandbytes>=0.43.0 \
+    sentencepiece \
+    huggingface_hub \
+    wandb \
+    google-cloud-storage \
+    scipy \
+    einops \
+    flash-attn --no-build-isolation
 
-ENV PYTHONUNBUFFERED=1
+# Copy application code
+COPY scripts/ /app/scripts/
+COPY pipeline/ /app/pipeline/
+COPY cloud/ /app/cloud/
 
+# Default entrypoint for PEFT training
 ENTRYPOINT ["python", "scripts/peft_train.py"]
