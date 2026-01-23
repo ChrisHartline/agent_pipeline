@@ -75,3 +75,11 @@ models:
     license: mit
     notes: "Updated Phi-3.5 with 128K context. Latest recommended version."
     gcp_model_garden: "microsoft/phi3"  # Available for deployment via Model Garden
+
+  - name: lfm2.5-1.2b-instruct
+    hf_slug: LiquidAI/LFM2.5-1.2B-Instruct
+    type: instruction
+    preferred_format: safetensors
+    trainable: true
+    license: lfm1.0
+    notes: "1.2B params, 32K context. Liquid neural network architecture optimized for on-device/edge. Commercial use requires license for companies >$10M revenue."
